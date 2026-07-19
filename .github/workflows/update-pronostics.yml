@@ -1,0 +1,37 @@
+# Actualisation automatique des pronostics — Sail by Self
+# Tourne tous les jours à 06h00 UTC (08h00 à Paris en été),
+# et peut aussi être lancée à la main depuis l'onglet Actions.
+
+name: Actualiser les pronostics
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Générer les pronostics
+        env:
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+        run: python3 pronostics/generator/predict.py
+
+      - name: Publier data.js s'il a changé
+        run: |
+          git config user.name "pronostics-bot"
+          git config user.email "actions@github.com"
+          git add pronostics/data.js
+          if git diff --cached --quiet; then
+            echo "Aucun changement — rien à publier."
+          else
+            git commit -m "Actualisation automatique des pronostics"
+            git push
+          fi

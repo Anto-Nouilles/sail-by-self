@@ -1,0 +1,9 @@
+# Clé API — ne JAMAIS publier ce fichier
+pronostics/generator/api_key.txt
+
+# Cache de données (régénéré à chaque exécution)
+pronostics/generator/cache/
+
+# Fichiers système
+.DS_Store
+Thumbs.db

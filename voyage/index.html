@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carnets de voyage — Sail by Self</title>
+<meta name="description" content="Récits de voyage, itinéraires et globe interactif des destinations.">
+<style>
+  :root {
+    --paper: #faf7f2;
+    --ink: #2b2620;
+    --ink-soft: #7a7266;
+    --terracotta: #c26e4b;
+    --sage: #8a9b7a;
+    --sand: #efe8dc;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.7;
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px clamp(20px, 5vw, 60px);
+    border-bottom: 1px solid var(--sand);
+    position: sticky;
+    top: 0;
+    background: rgba(250, 247, 242, 0.92);
+    backdrop-filter: blur(6px);
+    z-index: 500;
+  }
+  .brand {
+    font-size: 1.15rem;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .brand em { color: var(--terracotta); font-style: normal; }
+  nav.top a {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 0.82rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--ink-soft);
+    margin-left: 26px;
+    transition: color 0.25s;
+  }
+  nav.top a:hover { color: var(--terracotta); }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    text-align: center;
+    padding: clamp(60px, 10vh, 110px) 24px 50px;
+  }
+  .hero .kicker {
+    font-family: "Segoe UI", Arial, sans-serif;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    color: var(--terracotta);
+  }
+  .hero h1 {
+    font-size: clamp(2.4rem, 6vw, 4.2rem);
+    font-weight: 400;
+    margin: 18px auto 16px;
+    max-width: 800px;
+    line-height: 1.15;
+  }
+  .hero p {
+    color: var(--ink-soft);
+    max-width: 560px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+  }
+
+  /* ---------- Grille d'articles ---------- */
+  .articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 34px;
+    padding: 30px clamp(20px, 5vw, 60px) 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .post {
+    text-decoration: none;
+    color: var(--ink);
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  .post:hover { transform: translateY(-6px); }
+  .post .photo {
+    height: 220px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 14px;
+  }
+  .photo--islande { background: linear-gradient(135deg, #5d7b8a 0%, #a8bcC4 55%, #e8ddd0 100%); }
+  .photo--maroc { background: linear-gradient(135deg, #c26e4b 0%, #e0a370 55%, #f2d9b0 100%); }
+  .photo--japon { background: linear-gradient(135deg, #8a9b7a 0%, #c9d4b8 55%, #f5efdf 100%); }
+  .photo .tag {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    background: rgba(250, 247, 242, 0.92);
+    color: var(--ink);
+    padding: 5px 12px;
+    border-radius: 30px;
+  }
+  .post h2 {
+    font-size: 1.35rem;
+    font-weight: 400;
+    margin-bottom: 6px;
+    transition: color 0.25s;
+  }
+  .post:hover h2 { color: var(--terracotta); }
+  .post .meta {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .post p.excerpt { color: var(--ink-soft); font-size: 0.95rem; }
+
+  /* ---------- Globe ---------- */
+  .map-section {
+    background: var(--sand);
+    padding: 70px clamp(20px, 5vw, 60px);
+    text-align: center;
+  }
+  .map-section h2 {
+    font-weight: 400;
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+    margin-bottom: 10px;
+  }
+  .map-section > p { color: var(--ink-soft); margin-bottom: 8px; }
+  .globe-hint {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 24px;
+  }
+  #globe-wrap {
+    max-width: 560px;
+    margin: 0 auto;
+    position: relative;
+  }
+  #globe {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: grab;
+  }
+  #globe:active { cursor: grabbing; }
+  .globe-shadow {
+    width: 60%;
+    height: 26px;
+    margin: -8px auto 0;
+    background: radial-gradient(ellipse at center, rgba(43, 38, 32, 0.25), transparent 70%);
+    border-radius: 50%;
+  }
+  .globe-tooltip {
+    position: absolute;
+    pointer-events: none;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 0.8rem;
+    padding: 6px 14px;
+    border-radius: 30px;
+    box-shadow: 0 6px 18px rgba(43, 38, 32, 0.25);
+    opacity: 0;
+    transition: opacity 0.2s;
+    white-space: nowrap;
+    transform: translate(-50%, -140%);
+  }
+  .map-fallback {
+    display: none;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    background: var(--paper);
+    border-radius: 14px;
+    color: var(--ink-soft);
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    color: var(--ink-soft);
+  }
+  footer a { color: var(--terracotta); text-decoration: none; }
+
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="../index.html">Sail <em>by Self</em> · Carnets</a>
+  <nav class="top" aria-label="Navigation">
+    <a href="../index.html">Hub</a>
+    <a href="#carte">Globe</a>
+    <a href="../contact/index.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <p class="kicker">Carnets de voyage</p>
+  <h1>Des histoires à raconter,<br>des chemins à partager.</h1>
+  <p>Itinéraires détaillés, conseils pratiques et photographies — chaque destination devient un carnet à feuilleter.</p>
+</section>
+
+<section class="articles" aria-label="Derniers articles">
+  <a class="post reveal" href="article.html">
+    <div class="photo photo--islande"><span class="tag">Islande</span></div>
+    <p class="meta">Road trip · 12 jours · Exemple d'article</p>
+    <h2>Islande : le grand tour de la route 1</h2>
+    <p class="excerpt">Cascades, plages de sable noir et nuits sous les aurores : l'itinéraire complet de notre boucle islandaise.</p>
+  </a>
+  <a class="post reveal" href="article.html">
+    <div class="photo photo--maroc"><span class="tag">Maroc</span></div>
+    <p class="meta">Culture · 8 jours · À venir</p>
+    <h2>Maroc : de Marrakech aux dunes de Merzouga</h2>
+    <p class="excerpt">Souks, cols de l'Atlas et bivouac dans le désert — un condensé de contrastes en une semaine.</p>
+  </a>
+  <a class="post reveal" href="article.html">
+    <div class="photo photo--japon"><span class="tag">Japon</span></div>
+    <p class="meta">Ville & nature · 15 jours · À venir</p>
+    <h2>Japon : entre néons de Tokyo et temples de Kyoto</h2>
+    <p class="excerpt">Le choc des époques, un rail pass à la main : notre itinéraire pour un premier voyage au Japon.</p>
+  </a>
+</section>
+
+<section class="map-section" id="carte">
+  <h2>Le globe des destinations</h2>
+  <p>Chaque épingle renvoie vers le carnet correspondant.</p>
+  <p class="globe-hint">Faites tourner le globe · cliquez sur une épingle</p>
+  <div id="globe-wrap">
+    <svg id="globe" viewBox="0 0 600 600" role="img" aria-label="Globe interactif des destinations"></svg>
+    <div class="globe-tooltip" id="globe-tooltip"></div>
+  </div>
+  <div class="globe-shadow" aria-hidden="true"></div>
+  <div class="map-fallback" id="map-fallback">
+    <p>Le globe interactif nécessite une connexion internet.<br>Destinations : Islande · Maroc · Japon</p>
+  </div>
+</section>
+
+<footer>
+  CARNETS DE VOYAGE — un espace <a href="../index.html">Sail by Self</a> · © 2026
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script>
+  // ---------- Apparition au scroll ----------
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visible"); });
+  }, { threshold: 0.15 });
+  document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+  // ---------- Globe vintage ----------
+  const destinations = [
+    { name: "Islande — Route 1", coords: [-19.02, 64.96], link: "article.html" },
+    { name: "Maroc — Marrakech & désert", coords: [-7.99, 31.63], link: "article.html" },
+    { name: "Japon — Tokyo & Kyoto", coords: [139.69, 35.68], link: "article.html" }
+  ];
+  // Palette vieille carte : ocres, sables, touches bleu-vert
+  const landPalette = ["#c9a15f", "#d4b078", "#b98d55", "#7f9a94", "#c98d6b", "#c2a76a"];
+
+  function showFallback() {
+    document.getElementById("globe-wrap").style.display = "none";
+    document.querySelector(".globe-shadow").style.display = "none";
+    document.getElementById("map-fallback").style.display = "block";
+  }
+
+  if (typeof d3 === "undefined" || typeof topojson === "undefined") {
+    showFallback();
+  } else {
+    fetch("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json")
+      .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+      .then(world => {
+        const svg = d3.select("#globe");
+        const size = 600, cx = size / 2, cy = size / 2, radius = 265;
+        const projection = d3.geoOrthographic()
+          .scale(radius)
+          .translate([cx, cy])
+          .clipAngle(90)
+          .rotate([20, -20]);
+        const path = d3.geoPath(projection);
+        const countries = topojson.feature(world, world.objects.countries).features;
+
+        // Océan parchemin (dégradé radial pour le volume)
+        const defs = svg.append("defs");
+        const grad = defs.append("radialGradient")
+          .attr("id", "ocean").attr("cx", "38%").attr("cy", "32%").attr("r", "75%");
+        grad.append("stop").attr("offset", "0%").attr("stop-color", "#f4ecdd");
+        grad.append("stop").attr("offset", "70%").attr("stop-color", "#e8dcc4");
+        grad.append("stop").attr("offset", "100%").attr("stop-color", "#cbb894");
+
+        svg.append("circle")
+          .attr("cx", cx).attr("cy", cy).attr("r", radius)
+          .attr("fill", "url(#ocean)")
+          .attr("stroke", "#7a5c3a").attr("stroke-width", 2);
+
+        // Graticule (méridiens & parallèles à l'ancienne)
+        const graticulePath = svg.append("path")
+          .datum(d3.geoGraticule10())
+          .attr("fill", "none")
+          .attr("stroke", "rgba(122, 92, 58, 0.28)")
+          .attr("stroke-width", 0.7);
+
+        // Continents
+        const landPaths = svg.append("g").selectAll("path")
+          .data(countries)
+          .join("path")
+          .attr("fill", (d, i) => landPalette[i % landPalette.length])
+          .attr("stroke", "#7a5c3a")
+          .attr("stroke-width", 0.5);
+
+        // Ombrage sphérique par-dessus
+        const shade = defs.append("radialGradient")
+          .attr("id", "shade").attr("cx", "38%").attr("cy", "32%").attr("r", "80%");
+        shade.append("stop").attr("offset", "60%").attr("stop-color", "rgba(60,40,20,0)");
+        shade.append("stop").attr("offset", "100%").attr("stop-color", "rgba(60,40,20,0.28)");
+        svg.append("circle")
+          .attr("cx", cx).attr("cy", cy).attr("r", radius)
+          .attr("fill", "url(#shade)").attr("pointer-events", "none");
+
+        // Épingles
+        const tooltip = document.getElementById("globe-tooltip");
+        const pins = svg.append("g").selectAll("g")
+          .data(destinations)
+          .join("g")
+          .style("cursor", "pointer")
+          .on("click", (e, d) => { window.location.href = d.link; })
+          .on("mouseenter", function (e, d) {
+            const [x, y] = projection(d.coords);
+            const wrap = document.getElementById("globe-wrap");
+            const scale = wrap.clientWidth / size;
+            tooltip.textContent = d.name;
+            tooltip.style.left = (x * scale) + "px";
+            tooltip.style.top = (y * scale) + "px";
+            tooltip.style.opacity = 1;
+          })
+          .on("mouseleave", () => { tooltip.style.opacity = 0; });
+        pins.append("circle").attr("r", 11).attr("fill", "rgba(194, 110, 75, 0.25)");
+        pins.append("circle").attr("r", 5.5).attr("fill", "#c26e4b")
+          .attr("stroke", "#faf7f2").attr("stroke-width", 1.8);
+
+        function render() {
+          graticulePath.attr("d", path);
+          landPaths.attr("d", path);
+          const center = [-projection.rotate()[0], -projection.rotate()[1]];
+          pins.attr("transform", d => {
+            const [x, y] = projection(d.coords);
+            return `translate(${x}, ${y})`;
+          }).style("display", d =>
+            d3.geoDistance(d.coords, center) > Math.PI / 2 ? "none" : null
+          );
+        }
+
+        // Rotation automatique, interrompue à la première manipulation
+        let autoRotate = true;
+        const timer = d3.timer(() => {
+          if (!autoRotate) return;
+          const r = projection.rotate();
+          projection.rotate([r[0] + 0.06, r[1], r[2]]);
+          render();
+        });
+
+        // Rotation à la souris / au doigt
+        svg.call(d3.drag()
+          .on("start", () => { autoRotate = false; tooltip.style.opacity = 0; })
+          .on("drag", (e) => {
+            const r = projection.rotate();
+            const k = 75 / projection.scale();
+            projection.rotate([r[0] + e.dx * k, Math.max(-80, Math.min(80, r[1] - e.dy * k)), r[2]]);
+            render();
+          }));
+
+        render();
+      })
+      .catch(showFallback);
+  }
+</script>
+</body>
+</html>

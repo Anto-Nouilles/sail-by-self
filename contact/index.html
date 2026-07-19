@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Sail by Self</title>
+<meta name="description" content="Contacter Sail by Self : collaboration, question ou simple bonjour.">
+<style>
+  :root {
+    --night-deep: #060a18;
+    --night: #0a1128;
+    --accent: #b8a7e8;
+    --accent-dim: rgba(184, 167, 232, 0.3);
+    --text: #e9edf5;
+    --text-dim: #8b94ad;
+    --field-bg: rgba(255, 255, 255, 0.05);
+    --field-border: rgba(255, 255, 255, 0.12);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(to bottom, var(--night-deep), var(--night) 60%, #0d1f3c);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px clamp(20px, 5vw, 60px);
+  }
+  .brand { text-decoration: none; color: var(--text); font-size: 1rem; letter-spacing: 0.05em; font-weight: 300; }
+  .brand strong { font-weight: 700; }
+  nav a {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--text-dim);
+    margin-left: 24px;
+    transition: color 0.25s;
+  }
+  nav a:hover { color: var(--accent); }
+
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px 70px;
+  }
+  .wrap { width: 100%; max-width: 520px; }
+  .kicker {
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: var(--accent);
+    margin-bottom: 14px;
+  }
+  h1 { font-weight: 300; font-size: clamp(1.9rem, 5vw, 2.8rem); margin-bottom: 12px; }
+  .sub { color: var(--text-dim); margin-bottom: 38px; line-height: 1.65; }
+
+  form { display: grid; gap: 18px; }
+  label {
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    display: block;
+    margin-bottom: 7px;
+  }
+  input, textarea {
+    width: 100%;
+    background: var(--field-bg);
+    border: 1px solid var(--field-border);
+    border-radius: 10px;
+    padding: 13px 16px;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.25s, box-shadow 0.25s;
+  }
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-dim);
+  }
+  textarea { min-height: 140px; resize: vertical; }
+  button {
+    justify-self: start;
+    background: var(--accent);
+    color: #171230;
+    border: none;
+    border-radius: 30px;
+    padding: 13px 34px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px var(--accent-dim);
+  }
+  .confirmation {
+    display: none;
+    background: rgba(127, 212, 193, 0.1);
+    border: 1px solid rgba(127, 212, 193, 0.35);
+    color: #7fd4c1;
+    border-radius: 10px;
+    padding: 16px 20px;
+    line-height: 1.6;
+    font-size: 0.92rem;
+  }
+  .note { font-size: 0.78rem; color: var(--text-dim); margin-top: 6px; line-height: 1.6; }
+
+  footer {
+    text-align: center;
+    padding: 26px 20px;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    color: var(--text-dim);
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="../index.html">Sail <strong>by Self</strong></a>
+  <nav aria-label="Navigation">
+    <a href="../index.html">Hub</a>
+    <a href="../voyage/index.html">Carnets</a>
+    <a href="../pronostics/index.html">Pronostics</a>
+  </nav>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="kicker">Contact</p>
+    <h1>Un message dans la bouteille ?</h1>
+    <p class="sub">Collaboration, question sur un projet ou simple bonjour — ce formulaire ouvre votre client mail avec le message prérempli.</p>
+
+    <form id="contact-form">
+      <div>
+        <label for="name">Votre nom</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+      </div>
+      <div>
+        <label for="email">Votre email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+      </div>
+      <div>
+        <label for="message">Votre message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit">Envoyer</button>
+      <p class="note">Prototype : l'envoi passe par votre client mail. Un service de formulaire (gratuit) pourra le remplacer à la mise en ligne.</p>
+    </form>
+
+    <div class="confirmation" id="confirmation">
+      Votre client mail vient de s'ouvrir avec le message prérempli — il ne reste qu'à cliquer sur « Envoyer ». Merci !
+    </div>
+  </div>
+</main>
+
+<footer>
+  CONTACT — un espace <a href="../index.html">Sail by Self</a> · © 2026
+</footer>
+
+<script>
+  const form = document.getElementById("contact-form");
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const subject = encodeURIComponent(`[Sail by Self] Message de ${name}`);
+    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
+    window.location.href = `mailto:antoine.yves@em-strasbourg.eu?subject=${subject}&body=${body}`;
+    document.getElementById("confirmation").style.display = "block";
+  });
+</script>
+</body>
+</html>

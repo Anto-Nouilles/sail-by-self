@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pronostics · Bêta — Sail by Self</title>
+<meta name="description" content="Version bêta des pronostics sportifs automatisés — modèles Poisson et Elo, suivi de paris.">
+<style>
+  :root {
+    --bg: #07090f;
+    --panel: #0d1220;
+    --grid-line: rgba(127, 212, 193, 0.06);
+    --accent: #7fd4c1;
+    --accent-dim: rgba(127, 212, 193, 0.25);
+    --elo: #b8a7e8;
+    --elo-dim: rgba(184, 167, 232, 0.25);
+    --win: #7fd4c1;
+    --loss: #e07a6a;
+    --pending: #e8c87c;
+    --text: #e9edf5;
+    --text-dim: #78829c;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Consolas", "SF Mono", "Segoe UI Mono", monospace;
+    background: var(--bg);
+    background-image:
+      linear-gradient(var(--grid-line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 44px 44px;
+    color: var(--text);
+    min-height: 100vh;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px clamp(20px, 5vw, 60px);
+  }
+  .brand { text-decoration: none; color: var(--text); font-size: 0.95rem; letter-spacing: 0.06em; }
+  .brand span { color: var(--accent); }
+  nav a {
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--text-dim);
+    margin-left: 24px;
+  }
+  nav a:hover { color: var(--accent); }
+
+  main { max-width: 940px; margin: 0 auto; padding: 30px 24px 70px; }
+  .head { text-align: center; margin-bottom: 34px; }
+  .badge {
+    display: inline-block;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--pending);
+    border: 1px solid rgba(232, 200, 124, 0.4);
+    padding: 7px 16px;
+    border-radius: 30px;
+    margin-bottom: 22px;
+  }
+  h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); margin-bottom: 12px; }
+  .head p { color: var(--text-dim); font-size: 0.9rem; max-width: 600px; margin: 0 auto; line-height: 1.7; }
+  .generated { font-size: 0.7rem; color: var(--text-dim); margin-top: 12px; letter-spacing: 0.08em; }
+
+  /* ---------- Filtres ---------- */
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 8px;
+  }
+  select {
+    background: var(--panel);
+    color: var(--text);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-family: inherit;
+    font-size: 0.8rem;
+  }
+  .model-btn {
+    background: var(--panel);
+    color: var(--text-dim);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-family: inherit;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .model-btn.active--poisson { color: var(--accent); border-color: var(--accent); box-shadow: 0 0 14px var(--accent-dim); }
+  .model-btn.active--elo { color: var(--elo); border-color: var(--elo); box-shadow: 0 0 14px var(--elo-dim); }
+  .model-btn.active--both { color: var(--text); border-color: var(--text-dim); }
+
+  /* ---------- Stats ---------- */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 14px;
+    margin: 26px 0 10px;
+  }
+  .stat {
+    background: var(--panel);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 18px 20px;
+    text-align: center;
+  }
+  .stat .label {
+    font-size: 0.65rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 8px;
+  }
+  .stat .value { font-size: 1.45rem; color: var(--accent); }
+  .stat.stat--elo .value { color: var(--elo); }
+  .stat .sub { font-size: 0.68rem; color: var(--text-dim); margin-top: 6px; }
+  .pl-pos { color: var(--win) !important; }
+  .pl-neg { color: var(--loss) !important; }
+  .pl-neutral { color: var(--pending) !important; }
+
+  /* ---------- Pronostics ---------- */
+  .section-title {
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin: 34px 0 6px;
+  }
+  .section-hint { font-size: 0.72rem; color: var(--text-dim); margin-bottom: 14px; }
+  .pick {
+    background: var(--panel);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 12px;
+    transition: border-color 0.25s;
+  }
+  .pick--clickable { cursor: pointer; }
+  .pick--clickable:hover { border-color: var(--pending); }
+  .pick--open { border-color: var(--pending); }
+  .pick-main {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 14px;
+    align-items: center;
+  }
+  .pick .meta {
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+  .model-tag {
+    font-size: 0.62rem;
+    padding: 2px 9px;
+    border-radius: 12px;
+    letter-spacing: 0.1em;
+  }
+  .model-tag--poisson { color: var(--accent); border: 1px solid var(--accent-dim); }
+  .model-tag--elo { color: var(--elo); border: 1px solid var(--elo-dim); }
+  .bet-badge {
+    font-size: 0.62rem;
+    padding: 2px 9px;
+    border-radius: 12px;
+    letter-spacing: 0.1em;
+    color: var(--pending);
+    border: 1px solid rgba(232, 200, 124, 0.4);
+  }
+  .pick .match { font-size: 1.02rem; margin-bottom: 8px; }
+  .pick .tip { font-size: 0.85rem; color: var(--accent); }
+  .pick .tip strong { color: var(--text); font-weight: 400; }
+  .confidence { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
+  .confidence .track {
+    flex: 1;
+    max-width: 220px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .confidence .fill { display: block; height: 100%; background: var(--accent); border-radius: 5px; }
+  .pick--elo .confidence .fill { background: var(--elo); }
+  .pick--elo .tip { color: var(--elo); }
+  .confidence .pct { font-size: 0.72rem; color: var(--text-dim); }
+  .right { text-align: right; }
+  .odds { font-size: 1.2rem; margin-bottom: 8px; }
+  .odds small { font-size: 0.6rem; color: var(--text-dim); display: block; letter-spacing: 0.1em; }
+  .status {
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  .status--win { color: var(--win); border: 1px solid rgba(127, 212, 193, 0.4); }
+  .status--loss { color: var(--loss); border: 1px solid rgba(224, 122, 106, 0.4); }
+  .status--pending { color: var(--pending); border: 1px solid rgba(232, 200, 124, 0.4); }
+  .score { font-size: 0.72rem; color: var(--text-dim); margin-top: 6px; }
+
+  /* ---------- Formulaire de pari ---------- */
+  .bet-form {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.12);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-end;
+  }
+  .bet-form .field { display: flex; flex-direction: column; gap: 6px; }
+  .bet-form label {
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .bet-form input {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.9rem;
+    padding: 9px 12px;
+    width: 130px;
+  }
+  .bet-form input:focus { outline: none; border-color: var(--pending); }
+  .bet-form .preview { font-size: 0.72rem; color: var(--text-dim); flex-basis: 100%; }
+  .bet-form .preview strong { color: var(--pending); font-weight: 400; }
+  .btn {
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    cursor: pointer;
+  }
+  .btn--save { background: var(--pending); color: #171003; font-weight: 700; }
+  .btn--delete { background: transparent; color: var(--loss); border: 1px solid rgba(224, 122, 106, 0.4); }
+
+  /* ---------- Tableau des paris ---------- */
+  .bets-table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+  .bets-table th {
+    text-align: left;
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 400;
+  }
+  .bets-table td { padding: 10px; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+  .bets-table .del {
+    background: none;
+    border: none;
+    color: var(--loss);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.9rem;
+  }
+  .bets-wrap {
+    background: var(--panel);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 10px 14px;
+    overflow-x: auto;
+  }
+
+  .empty, .nodata {
+    background: var(--panel);
+    border: 1px dashed rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    line-height: 1.8;
+  }
+  .nodata code { color: var(--accent); }
+
+  .disclaimer {
+    margin-top: 40px;
+    padding: 18px 22px;
+    background: var(--panel);
+    border-left: 3px solid var(--pending);
+    border-radius: 0 10px 10px 0;
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    line-height: 1.7;
+  }
+
+  footer {
+    text-align: center;
+    padding: 26px 20px;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    color: var(--text-dim);
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  @media (max-width: 560px) {
+    .pick-main { grid-template-columns: 1fr; }
+    .right { text-align: left; display: flex; align-items: center; gap: 14px; }
+    .odds { margin-bottom: 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="../index.html">sail-by-self<span>/pronostics/beta</span></a>
+  <nav aria-label="Navigation">
+    <a href="index.html">Pronostics</a>
+    <a href="../index.html">Hub</a>
+    <a href="../contact/index.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <div class="head">
+    <div class="badge" id="badge">Version bêta</div>
+    <h1>Les pronostics du système</h1>
+    <p>Deux modèles tournent en parallèle : <strong>Poisson</strong> (buts attendus) et <strong>Elo</strong> (niveau relatif). Clique sur un pronostic à venir pour enregistrer ta mise et ta cote Betclic — le benchmark de gains/pertes se calcule tout seul.</p>
+    <p class="generated" id="generated"></p>
+  </div>
+
+  <div id="app"></div>
+
+  <div class="disclaimer">
+    ⚠ Prototype expérimental — ces pronostics sont générés par des modèles statistiques simples et ne constituent pas un conseil de pari. Les jeux d'argent comportent des risques : endettement, isolement, dépendance. Ne joue que ce que tu peux te permettre de perdre.
+  </div>
+</main>
+
+<footer>
+  PRONOSTICS · BÊTA — un espace <a href="../index.html">Sail by Self</a> · © 2026
+</footer>
+
+<script src="data.js"></script>
+<script>
+(function () {
+  const app = document.getElementById("app");
+  const DATA = window.PRONOSTICS_DATA;
+
+  if (!DATA || !DATA.picks) {
+    app.innerHTML = `<div class="nodata">
+      Aucune donnée trouvée.<br>
+      Lance le générateur : <code>python3 generator/predict.py</code><br>
+      (ou <code>python3 generator/predict.py --demo</code> pour un essai sans clé API)
+    </div>`;
+    return;
+  }
+
+  if (DATA.demo) document.getElementById("badge").textContent = "Version bêta · données de démonstration";
+  document.getElementById("generated").textContent = "Généré le " + DATA.generatedAt;
+
+  // ---------- Stockage des paris (localStorage, avec repli mémoire) ----------
+  const BETS_KEY = "sbs-bets";
+  let memoryBets = {};
+  function loadBets() {
+    try { return JSON.parse(localStorage.getItem(BETS_KEY) || "{}"); }
+    catch (e) { return memoryBets; }
+  }
+  function saveBets(bets) {
+    memoryBets = bets;
+    try { localStorage.setItem(BETS_KEY, JSON.stringify(bets)); } catch (e) {}
+  }
+
+  const pickId = p => [p.date, p.league, p.match, p.model].join("|");
+  const byId = {};
+  DATA.picks.forEach(p => { byId[pickId(p)] = p; });
+
+  // Synchronise le statut des paris avec les données fraîches
+  const bets = loadBets();
+  let dirty = false;
+  Object.entries(bets).forEach(([id, b]) => {
+    const p = byId[id];
+    if (p && p.status !== b.lastStatus) { b.lastStatus = p.status; b.score = p.score || null; dirty = true; }
+  });
+  if (dirty) saveBets(bets);
+
+  const state = { league: "all", model: "both", openBet: null };
+  const modelName = { poisson: "Poisson", elo: "Elo" };
+  const statusLabel = { win: "Réussi", loss: "Manqué", pending: "À venir" };
+
+  const fmtEuro = v => v.toLocaleString("fr-FR", { style: "currency", currency: "EUR" });
+  const fmtDate = iso => new Date(iso + "T12:00:00").toLocaleDateString("fr-FR", { day: "numeric", month: "short" });
+  const esc = s => s.replace(/"/g, "&quot;");
+
+  function betProfit(b) {
+    // Profit réalisé (ou null si le pari est en cours)
+    if (b.lastStatus === "win") return b.stake * (b.odds - 1);
+    if (b.lastStatus === "loss") return -b.stake;
+    return null;
+  }
+
+  function filtered() {
+    return DATA.picks.filter(p =>
+      (state.league === "all" || p.league === state.league) &&
+      (state.model === "both" || p.model === state.model)
+    );
+  }
+
+  function modelStats(model) {
+    const hist = DATA.picks.filter(p =>
+      p.model === model && p.status !== "pending" &&
+      (state.league === "all" || p.league === state.league));
+    const wins = hist.filter(p => p.status === "win").length;
+    return { total: hist.length, rate: hist.length ? Math.round(100 * wins / hist.length) : null };
+  }
+
+  // ---------- Rendu d'un pronostic ----------
+  function pickHTML(p) {
+    const id = pickId(p);
+    const bet = bets[id];
+    const clickable = p.status === "pending";
+    const open = state.openBet === id;
+    const betBadge = bet
+      ? `<span class="bet-badge">Parié ${fmtEuro(bet.stake)} @${bet.odds.toFixed(2)}</span>` : "";
+
+    let form = "";
+    if (open) {
+      const stakeVal = bet ? bet.stake : "";
+      const oddsVal = bet ? bet.odds : p.odds;
+      form = `<div class="bet-form" data-id="${esc(id)}">
+        <div class="field">
+          <label>Mise (€)</label>
+          <input type="number" min="0" step="0.5" class="in-stake" value="${stakeVal}" placeholder="10">
+        </div>
+        <div class="field">
+          <label>Cote Betclic ajustée</label>
+          <input type="number" min="1.01" step="0.01" class="in-odds" value="${oddsVal}">
+        </div>
+        <button class="btn btn--save">Enregistrer</button>
+        ${bet ? '<button class="btn btn--delete">Retirer le pari</button>' : ""}
+        <p class="preview"></p>
+      </div>`;
+    }
+
+    return `<div class="pick pick--${p.model} ${clickable ? "pick--clickable" : ""} ${open ? "pick--open" : ""}" data-id="${esc(id)}">
+      <div class="pick-main">
+        <div>
+          <p class="meta">
+            <span>${fmtDate(p.date)} · ${p.leagueName}</span>
+            <span class="model-tag model-tag--${p.model}">${modelName[p.model]}</span>
+            ${betBadge}
+          </p>
+          <p class="match">${p.match}</p>
+          <p class="tip">→ <strong>${p.tip}</strong></p>
+          <div class="confidence">
+            <span class="track"><span class="fill" style="width:${p.confidence}%"></span></span>
+            <span class="pct">confiance ${p.confidence}%</span>
+          </div>
+        </div>
+        <div class="right">
+          <p class="odds">@${p.odds.toFixed(2)}<small>cote équitable</small></p>
+          <div>
+            <span class="status status--${p.status}">${statusLabel[p.status]}</span>
+            ${p.score ? `<p class="score">score : ${p.score}</p>` : ""}
+          </div>
+        </div>
+      </div>
+      ${form}
+    </div>`;
+  }
+
+  // ---------- Benchmark des paris ----------
+  function betsBenchmarkHTML() {
+    const list = Object.entries(bets).map(([id, b]) => ({ id, ...b }));
+    if (!list.length) return "";
+
+    let staked = 0, stakedPending = 0, potential = 0, netRealized = 0, stakedSettled = 0, won = 0, lost = 0;
+    list.forEach(b => {
+      staked += b.stake;
+      const profit = betProfit(b);
+      if (profit === null) {
+        stakedPending += b.stake;
+        potential += b.stake * (b.odds - 1);
+      } else {
+        stakedSettled += b.stake;
+        netRealized += profit;
+        profit >= 0 ? won++ : lost++;
+      }
+    });
+    const roi = stakedSettled ? (100 * netRealized / stakedSettled) : null;
+    const plClass = v => v > 0 ? "pl-pos" : v < 0 ? "pl-neg" : "pl-neutral";
+
+    const rows = list
+      .sort((a, b) => b.date.localeCompare(a.date))
+      .map(b => {
+        const profit = betProfit(b);
+        const plCell = profit === null
+          ? `<span class="pl-neutral">+${fmtEuro(b.stake * (b.odds - 1)).replace("+", "")} potentiel</span>`
+          : `<span class="${plClass(profit)}">${profit >= 0 ? "+" : ""}${fmtEuro(profit)}</span>`;
+        return `<tr>
+          <td>${fmtDate(b.date)}</td>
+          <td>${b.match}<br><span class="model-tag model-tag--${b.model}">${modelName[b.model]}</span></td>
+          <td>${b.tip}</td>
+          <td>${fmtEuro(b.stake)}</td>
+          <td>@${b.odds.toFixed(2)}</td>
+          <td><span class="status status--${b.lastStatus}">${statusLabel[b.lastStatus]}</span></td>
+          <td>${plCell}</td>
+          <td><button class="del" data-del="${esc(b.id)}" title="Supprimer">✕</button></td>
+        </tr>`;
+      }).join("");
+
+    return `
+      <p class="section-title">// Benchmark gains / pertes</p>
+      <div class="stats">
+        <div class="stat"><p class="label">Total misé</p><p class="value">${fmtEuro(staked)}</p><p class="sub">${list.length} pari(s)</p></div>
+        <div class="stat"><p class="label">En cours</p><p class="value pl-neutral">${fmtEuro(stakedPending)}</p><p class="sub">gain potentiel +${fmtEuro(potential)}</p></div>
+        <div class="stat"><p class="label">Résultat net</p><p class="value ${plClass(netRealized)}">${netRealized >= 0 ? "+" : ""}${fmtEuro(netRealized)}</p><p class="sub">${won} gagné(s) · ${lost} perdu(s)</p></div>
+        <div class="stat"><p class="label">ROI réalisé</p><p class="value ${roi === null ? "" : plClass(roi)}">${roi === null ? "–" : (roi >= 0 ? "+" : "") + roi.toFixed(1) + "%"}</p><p class="sub">sur paris réglés</p></div>
+      </div>
+      <div class="bets-wrap">
+        <table class="bets-table">
+          <thead><tr><th>Date</th><th>Match</th><th>Pronostic</th><th>Mise</th><th>Cote</th><th>Statut</th><th>P/L</th><th></th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>`;
+  }
+
+  // ---------- Rendu global ----------
+  function render() {
+    const picks = filtered();
+    const upcoming = picks.filter(p => p.status === "pending");
+    const history = picks.filter(p => p.status !== "pending")
+      .sort((a, b) => b.date.localeCompare(a.date));
+    const sp = modelStats("poisson"), se = modelStats("elo");
+
+    const leagueOptions = ['<option value="all">Tous les championnats</option>']
+      .concat(DATA.leagues.map(l =>
+        `<option value="${l.code}" ${state.league === l.code ? "selected" : ""}>${l.name}</option>`))
+      .join("");
+
+    app.innerHTML = `
+      <div class="filters">
+        <select id="league-filter" aria-label="Filtrer par championnat">${leagueOptions}</select>
+        <button class="model-btn ${state.model === "both" ? "active--both" : ""}" data-model="both">Les deux</button>
+        <button class="model-btn ${state.model === "poisson" ? "active--poisson" : ""}" data-model="poisson">Poisson</button>
+        <button class="model-btn ${state.model === "elo" ? "active--elo" : ""}" data-model="elo">Elo</button>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <p class="label">Réussite · Poisson</p>
+          <p class="value">${sp.rate === null ? "–" : sp.rate + "%"}</p>
+          <p class="sub">${sp.total} pronostics évalués</p>
+        </div>
+        <div class="stat stat--elo">
+          <p class="label">Réussite · Elo</p>
+          <p class="value">${se.rate === null ? "–" : se.rate + "%"}</p>
+          <p class="sub">${se.total} pronostics évalués</p>
+        </div>
+        <div class="stat">
+          <p class="label">À venir</p>
+          <p class="value">${upcoming.length}</p>
+          <p class="sub">sous 14 jours</p>
+        </div>
+      </div>
+
+      ${betsBenchmarkHTML()}
+
+      <p class="section-title">// À venir</p>
+      <p class="section-hint">Clique sur un pronostic pour saisir ta mise et ta cote Betclic.</p>
+      ${upcoming.length ? upcoming.map(pickHTML).join("")
+        : '<div class="empty">Aucun match à venir dans la fenêtre actuelle (intersaison ou trêve).</div>'}
+
+      <p class="section-title">// Historique (fenêtre récente, backtest)</p>
+      ${history.length ? history.map(pickHTML).join("")
+        : '<div class="empty">Pas encore d\'historique évalué pour ce filtre.</div>'}
+    `;
+
+    // ---------- Écouteurs ----------
+    document.getElementById("league-filter").addEventListener("change", e => {
+      state.league = e.target.value; render();
+    });
+    app.querySelectorAll(".model-btn").forEach(btn =>
+      btn.addEventListener("click", () => { state.model = btn.dataset.model; render(); }));
+
+    // Ouvrir / fermer le formulaire de pari
+    app.querySelectorAll(".pick--clickable").forEach(el =>
+      el.addEventListener("click", e => {
+        if (e.target.closest(".bet-form")) return; // ne pas fermer en cliquant dans le formulaire
+        const id = el.dataset.id;
+        state.openBet = state.openBet === id ? null : id;
+        render();
+      }));
+
+    // Formulaire : aperçu en direct + enregistrement + suppression
+    app.querySelectorAll(".bet-form").forEach(formEl => {
+      const id = formEl.dataset.id;
+      const p = byId[id];
+      const stakeIn = formEl.querySelector(".in-stake");
+      const oddsIn = formEl.querySelector(".in-odds");
+      const preview = formEl.querySelector(".preview");
+
+      function updatePreview() {
+        const stake = parseFloat(stakeIn.value);
+        const odds = parseFloat(oddsIn.value);
+        if (stake > 0 && odds > 1) {
+          const gain = stake * (odds - 1);
+          preview.innerHTML = `Si réussi : retour <strong>${fmtEuro(stake * odds)}</strong> (profit +${fmtEuro(gain)}, soit +${(100 * (odds - 1)).toFixed(0)}%) · si manqué : <strong>−${fmtEuro(stake)}</strong>`;
+        } else preview.textContent = "";
+      }
+      stakeIn.addEventListener("input", updatePreview);
+      oddsIn.addEventListener("input", updatePreview);
+      updatePreview();
+      stakeIn.focus();
+
+      formEl.querySelector(".btn--save").addEventListener("click", () => {
+        const stake = parseFloat(stakeIn.value);
+        const odds = parseFloat(oddsIn.value);
+        if (!(stake > 0) || !(odds > 1)) { preview.textContent = "Mise et cote invalides."; return; }
+        bets[id] = {
+          stake, odds,
+          date: p.date, match: p.match, model: p.model, tip: p.tip,
+          leagueName: p.leagueName, lastStatus: p.status, score: p.score || null,
+          placedAt: new Date().toISOString(),
+        };
+        saveBets(bets);
+        state.openBet = null;
+        render();
+      });
+
+      const delBtn = formEl.querySelector(".btn--delete");
+      if (delBtn) delBtn.addEventListener("click", () => {
+        delete bets[id];
+        saveBets(bets);
+        state.openBet = null;
+        render();
+      });
+    });
+
+    // Suppression depuis le tableau
+    app.querySelectorAll("[data-del]").forEach(btn =>
+      btn.addEventListener("click", () => {
+        delete bets[btn.dataset.del];
+        saveBets(bets);
+        render();
+      }));
+  }
+
+  render();
+})();
+</script>
+</body>
+</html>
