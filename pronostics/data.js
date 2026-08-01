@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-07-31 08:36 UTC",
+ "generatedAt": "2026-08-01 08:05 UTC",
  "demo": false,
  "leagues": [
   {
@@ -25,6 +25,54 @@ window.PRONOSTICS_DATA = {
   }
  ],
  "picks": [
+  {
+   "date": "2026-08-15",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Alavés — Getafe",
+   "model": "poisson",
+   "tip": "Victoire Alavés",
+   "confidence": 40,
+   "odds": 2.5,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-15",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Alavés — Getafe",
+   "model": "elo",
+   "tip": "Victoire Alavés",
+   "confidence": 37,
+   "odds": 2.69,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-15",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Sevilla FC — Rayo Vallecano",
+   "model": "poisson",
+   "tip": "Victoire Sevilla FC",
+   "confidence": 40,
+   "odds": 2.51,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-15",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Sevilla FC — Rayo Vallecano",
+   "model": "elo",
+   "tip": "Victoire Rayo Vallecano",
+   "confidence": 42,
+   "odds": 2.4,
+   "score": null,
+   "status": "pending"
+  },
   {
    "date": "2026-05-10",
    "league": "BL1",
