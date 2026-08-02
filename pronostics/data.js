@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-08-01 08:05 UTC",
+ "generatedAt": "2026-08-02 08:07 UTC",
  "demo": false,
  "leagues": [
   {
@@ -70,6 +70,54 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Rayo Vallecano",
    "confidence": 42,
    "odds": 2.4,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-16",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Espanyol — Levante",
+   "model": "poisson",
+   "tip": "Victoire Espanyol",
+   "confidence": 48,
+   "odds": 2.07,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-16",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Espanyol — Levante",
+   "model": "elo",
+   "tip": "Victoire Espanyol",
+   "confidence": 36,
+   "odds": 2.79,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-16",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Celta — Osasuna",
+   "model": "poisson",
+   "tip": "Victoire Celta",
+   "confidence": 54,
+   "odds": 1.87,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-16",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Celta — Osasuna",
+   "model": "elo",
+   "tip": "Victoire Celta",
+   "confidence": 58,
+   "odds": 1.72,
    "score": null,
    "status": "pending"
   },
