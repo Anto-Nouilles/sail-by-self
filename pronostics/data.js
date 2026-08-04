@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-08-03 09:25 UTC",
+ "generatedAt": "2026-08-04 08:23 UTC",
  "demo": false,
  "leagues": [
   {
