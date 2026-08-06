@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-08-05 08:20 UTC",
+ "generatedAt": "2026-08-06 08:17 UTC",
  "demo": false,
  "leagues": [
   {
@@ -118,6 +118,30 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Celta",
    "confidence": 58,
    "odds": 1.72,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-20",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Rayo Vallecano — Alavés",
+   "model": "poisson",
+   "tip": "Victoire Rayo Vallecano",
+   "confidence": 50,
+   "odds": 2.01,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-20",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Rayo Vallecano — Alavés",
+   "model": "elo",
+   "tip": "Victoire Rayo Vallecano",
+   "confidence": 57,
+   "odds": 1.76,
    "score": null,
    "status": "pending"
   },
