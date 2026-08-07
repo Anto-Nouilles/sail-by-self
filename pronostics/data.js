@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-08-06 08:17 UTC",
+ "generatedAt": "2026-08-07 07:01 UTC",
  "demo": false,
  "leagues": [
   {
@@ -142,6 +142,54 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Rayo Vallecano",
    "confidence": 57,
    "odds": 1.76,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-21",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Marseille — Strasbourg",
+   "model": "poisson",
+   "tip": "Victoire Marseille",
+   "confidence": 52,
+   "odds": 1.92,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-21",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Marseille — Strasbourg",
+   "model": "elo",
+   "tip": "Victoire Marseille",
+   "confidence": 44,
+   "odds": 2.26,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-21",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Real Betis — Real Sociedad",
+   "model": "poisson",
+   "tip": "Victoire Real Betis",
+   "confidence": 59,
+   "odds": 1.69,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-21",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Real Betis — Real Sociedad",
+   "model": "elo",
+   "tip": "Victoire Real Betis",
+   "confidence": 60,
+   "odds": 1.68,
    "score": null,
    "status": "pending"
   },
