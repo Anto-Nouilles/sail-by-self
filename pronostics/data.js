@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-08-09 06:39 UTC",
+ "generatedAt": "2026-08-10 07:12 UTC",
  "demo": false,
  "leagues": [
   {
@@ -718,6 +718,102 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Milan",
    "confidence": 42,
    "odds": 2.39,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-24",
+   "league": "PL",
+   "leagueName": "Premier League",
+   "match": "Fulham — Chelsea",
+   "model": "poisson",
+   "tip": "Victoire Fulham",
+   "confidence": 38,
+   "odds": 2.63,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-24",
+   "league": "PL",
+   "leagueName": "Premier League",
+   "match": "Fulham — Chelsea",
+   "model": "elo",
+   "tip": "Victoire Fulham",
+   "confidence": 48,
+   "odds": 2.07,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-24",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Osasuna — Levante",
+   "model": "poisson",
+   "tip": "Victoire Osasuna",
+   "confidence": 52,
+   "odds": 1.94,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-24",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Osasuna — Levante",
+   "model": "elo",
+   "tip": "Victoire Osasuna",
+   "confidence": 34,
+   "odds": 2.9,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-24",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Bologna — Lazio",
+   "model": "poisson",
+   "tip": "Victoire Bologna",
+   "confidence": 39,
+   "odds": 2.54,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-24",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Bologna — Lazio",
+   "model": "elo",
+   "tip": "Victoire Bologna",
+   "confidence": 42,
+   "odds": 2.37,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-24",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Roma — Fiorentina",
+   "model": "poisson",
+   "tip": "Victoire Roma",
+   "confidence": 63,
+   "odds": 1.58,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-24",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Roma — Fiorentina",
+   "model": "elo",
+   "tip": "Victoire Roma",
+   "confidence": 63,
+   "odds": 1.58,
    "score": null,
    "status": "pending"
   },
