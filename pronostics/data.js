@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-08-10 07:12 UTC",
+ "generatedAt": "2026-08-11 06:50 UTC",
  "demo": false,
  "leagues": [
   {
@@ -814,6 +814,30 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Roma",
    "confidence": 63,
    "odds": 1.58,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-25",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Valencia — Real Betis",
+   "model": "poisson",
+   "tip": "Victoire Real Betis",
+   "confidence": 39,
+   "odds": 2.59,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-25",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Valencia — Real Betis",
+   "model": "elo",
+   "tip": "Victoire Valencia",
+   "confidence": 36,
+   "odds": 2.75,
    "score": null,
    "status": "pending"
   },
