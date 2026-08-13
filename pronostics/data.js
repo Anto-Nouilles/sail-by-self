@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-08-12 07:10 UTC",
+ "generatedAt": "2026-08-13 07:14 UTC",
  "demo": false,
  "leagues": [
   {
@@ -862,6 +862,30 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Real Madrid",
    "confidence": 72,
    "odds": 1.38,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-27",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Barça — Athletic",
+   "model": "poisson",
+   "tip": "Victoire Barça",
+   "confidence": 87,
+   "odds": 1.15,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-27",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Barça — Athletic",
+   "model": "elo",
+   "tip": "Victoire Barça",
+   "confidence": 80,
+   "odds": 1.25,
    "score": null,
    "status": "pending"
   },
