@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-08-13 07:14 UTC",
+ "generatedAt": "2026-08-14 07:10 UTC",
  "demo": false,
  "leagues": [
   {
@@ -886,6 +886,102 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Barça",
    "confidence": 80,
    "odds": 1.25,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-28",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Lille — PSG",
+   "model": "poisson",
+   "tip": "Victoire PSG",
+   "confidence": 47,
+   "odds": 2.12,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-28",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Lille — PSG",
+   "model": "elo",
+   "tip": "Victoire PSG",
+   "confidence": 35,
+   "odds": 2.87,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-28",
+   "league": "PL",
+   "leagueName": "Premier League",
+   "match": "Crystal Palace — Man City",
+   "model": "poisson",
+   "tip": "Victoire Man City",
+   "confidence": 60,
+   "odds": 1.66,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-28",
+   "league": "PL",
+   "leagueName": "Premier League",
+   "match": "Crystal Palace — Man City",
+   "model": "elo",
+   "tip": "Victoire Man City",
+   "confidence": 62,
+   "odds": 1.62,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-28",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Alavés — Villarreal",
+   "model": "poisson",
+   "tip": "Victoire Villarreal",
+   "confidence": 49,
+   "odds": 2.03,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-28",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Alavés — Villarreal",
+   "model": "elo",
+   "tip": "Victoire Villarreal",
+   "confidence": 46,
+   "odds": 2.16,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-28",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Bayern — Stuttgart",
+   "model": "poisson",
+   "tip": "Victoire Bayern",
+   "confidence": 79,
+   "odds": 1.26,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-08-28",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Bayern — Stuttgart",
+   "model": "elo",
+   "tip": "Victoire Bayern",
+   "confidence": 68,
+   "odds": 1.47,
    "score": null,
    "status": "pending"
   },
