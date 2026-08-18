@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-08-17 06:35 UTC",
+ "generatedAt": "2026-08-18 06:27 UTC",
  "demo": false,
  "leagues": [
   {
@@ -33,7 +33,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Rayo Vallecano",
    "confidence": 48,
-   "odds": 2.09,
+   "odds": 2.1,
    "score": null,
    "status": "pending"
   },
@@ -249,7 +249,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Athletic",
    "confidence": 46,
-   "odds": 2.16,
+   "odds": 2.17,
    "score": null,
    "status": "pending"
   },
@@ -573,7 +573,7 @@ window.PRONOSTICS_DATA = {
    "model": "elo",
    "tip": "Victoire Barça",
    "confidence": 66,
-   "odds": 1.51,
+   "odds": 1.52,
    "score": null,
    "status": "pending"
   },
@@ -729,7 +729,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Real Betis",
    "confidence": 38,
-   "odds": 2.62,
+   "odds": 2.61,
    "score": null,
    "status": "pending"
   },
@@ -873,7 +873,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Villarreal",
    "confidence": 46,
-   "odds": 2.16,
+   "odds": 2.15,
    "score": null,
    "status": "pending"
   },
@@ -1137,7 +1137,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Atleti",
    "confidence": 45,
-   "odds": 2.23,
+   "odds": 2.22,
    "score": null,
    "status": "pending"
   },
