@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-08-19 06:28 UTC",
+ "generatedAt": "2026-08-20 06:29 UTC",
  "demo": false,
  "leagues": [
   {
@@ -33,7 +33,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Rayo Vallecano",
    "confidence": 48,
-   "odds": 2.1,
+   "odds": 2.09,
    "score": null,
    "status": "pending"
   },
@@ -81,7 +81,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Real Betis",
    "confidence": 59,
-   "odds": 1.69,
+   "odds": 1.68,
    "score": null,
    "status": "pending"
   },
@@ -249,7 +249,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Athletic",
    "confidence": 46,
-   "odds": 2.17,
+   "odds": 2.16,
    "score": null,
    "status": "pending"
   },
@@ -297,7 +297,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Real Madrid",
    "confidence": 56,
-   "odds": 1.77,
+   "odds": 1.78,
    "score": null,
    "status": "pending"
   },
@@ -536,8 +536,8 @@ window.PRONOSTICS_DATA = {
    "match": "Atleti — Villarreal",
    "model": "poisson",
    "tip": "Victoire Atleti",
-   "confidence": 47,
-   "odds": 2.13,
+   "confidence": 48,
+   "odds": 2.08,
    "score": null,
    "status": "pending"
   },
@@ -548,8 +548,8 @@ window.PRONOSTICS_DATA = {
    "match": "Atleti — Villarreal",
    "model": "elo",
    "tip": "Victoire Atleti",
-   "confidence": 39,
-   "odds": 2.59,
+   "confidence": 41,
+   "odds": 2.44,
    "score": null,
    "status": "pending"
   },
@@ -657,7 +657,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Osasuna",
    "confidence": 53,
-   "odds": 1.88,
+   "odds": 1.87,
    "score": null,
    "status": "pending"
   },
@@ -729,7 +729,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Real Betis",
    "confidence": 38,
-   "odds": 2.61,
+   "odds": 2.62,
    "score": null,
    "status": "pending"
   },
@@ -873,7 +873,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Villarreal",
    "confidence": 46,
-   "odds": 2.15,
+   "odds": 2.16,
    "score": null,
    "status": "pending"
   },
@@ -1089,7 +1089,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Real Betis",
    "confidence": 43,
-   "odds": 2.32,
+   "odds": 2.33,
    "score": null,
    "status": "pending"
   },
@@ -1136,8 +1136,8 @@ window.PRONOSTICS_DATA = {
    "match": "Sevilla FC — Atleti",
    "model": "poisson",
    "tip": "Victoire Atleti",
-   "confidence": 45,
-   "odds": 2.22,
+   "confidence": 46,
+   "odds": 2.18,
    "score": null,
    "status": "pending"
   },
@@ -1148,8 +1148,8 @@ window.PRONOSTICS_DATA = {
    "match": "Sevilla FC — Atleti",
    "model": "elo",
    "tip": "Victoire Atleti",
-   "confidence": 41,
-   "odds": 2.42,
+   "confidence": 44,
+   "odds": 2.29,
    "score": null,
    "status": "pending"
   },
@@ -1568,8 +1568,8 @@ window.PRONOSTICS_DATA = {
    "match": "Osasuna — Getafe",
    "model": "poisson",
    "tip": "Victoire Osasuna",
-   "confidence": 44,
-   "odds": 2.25,
+   "confidence": 45,
+   "odds": 2.24,
    "score": null,
    "status": "pending"
   },
@@ -1654,6 +1654,54 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Atalanta",
    "confidence": 51,
    "odds": 1.95,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-03",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Toulouse — Lille",
+   "model": "poisson",
+   "tip": "Victoire Lille",
+   "confidence": 39,
+   "odds": 2.57,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-03",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Toulouse — Lille",
+   "model": "elo",
+   "tip": "Victoire Lille",
+   "confidence": 40,
+   "odds": 2.5,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-03",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Real Sociedad — Celta",
+   "model": "poisson",
+   "tip": "Victoire Real Sociedad",
+   "confidence": 45,
+   "odds": 2.2,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-03",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Real Sociedad — Celta",
+   "model": "elo",
+   "tip": "Victoire Real Sociedad",
+   "confidence": 37,
+   "odds": 2.71,
    "score": null,
    "status": "pending"
   },
