@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-08-20 06:29 UTC",
+ "generatedAt": "2026-08-21 06:30 UTC",
  "demo": false,
  "leagues": [
   {
@@ -25,30 +25,6 @@ window.PRONOSTICS_DATA = {
   }
  ],
  "picks": [
-  {
-   "date": "2026-08-20",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Rayo Vallecano — Alavés",
-   "model": "poisson",
-   "tip": "Victoire Rayo Vallecano",
-   "confidence": 48,
-   "odds": 2.09,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-08-20",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Rayo Vallecano — Alavés",
-   "model": "elo",
-   "tip": "Victoire Rayo Vallecano",
-   "confidence": 51,
-   "odds": 1.97,
-   "score": null,
-   "status": "pending"
-  },
   {
    "date": "2026-08-21",
    "league": "FL1",
@@ -297,7 +273,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Real Madrid",
    "confidence": 56,
-   "odds": 1.78,
+   "odds": 1.77,
    "score": null,
    "status": "pending"
   },
@@ -537,7 +513,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Atleti",
    "confidence": 48,
-   "odds": 2.08,
+   "odds": 2.09,
    "score": null,
    "status": "pending"
   },
@@ -873,7 +849,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Villarreal",
    "confidence": 46,
-   "odds": 2.16,
+   "odds": 2.17,
    "score": null,
    "status": "pending"
   },
@@ -885,7 +861,7 @@ window.PRONOSTICS_DATA = {
    "model": "elo",
    "tip": "Victoire Villarreal",
    "confidence": 42,
-   "odds": 2.36,
+   "odds": 2.38,
    "score": null,
    "status": "pending"
   },
@@ -1604,7 +1580,7 @@ window.PRONOSTICS_DATA = {
    "match": "Barça — Rayo Vallecano",
    "model": "elo",
    "tip": "Victoire Barça",
-   "confidence": 72,
+   "confidence": 73,
    "odds": 1.38,
    "score": null,
    "status": "pending"
@@ -1702,6 +1678,126 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Real Sociedad",
    "confidence": 37,
    "odds": 2.71,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-04",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Olympique Lyon — Auxerre",
+   "model": "poisson",
+   "tip": "Victoire Olympique Lyon",
+   "confidence": 58,
+   "odds": 1.72,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-04",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Olympique Lyon — Auxerre",
+   "model": "elo",
+   "tip": "Victoire Olympique Lyon",
+   "confidence": 56,
+   "odds": 1.77,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-04",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "PSG — Monaco",
+   "model": "poisson",
+   "tip": "Victoire PSG",
+   "confidence": 75,
+   "odds": 1.33,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-04",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "PSG — Monaco",
+   "model": "elo",
+   "tip": "Victoire PSG",
+   "confidence": 62,
+   "odds": 1.61,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-04",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Real Betis — Real Madrid",
+   "model": "poisson",
+   "tip": "Victoire Real Madrid",
+   "confidence": 45,
+   "odds": 2.23,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-04",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Real Betis — Real Madrid",
+   "model": "elo",
+   "tip": "Victoire Real Madrid",
+   "confidence": 42,
+   "odds": 2.38,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-04",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Genoa — Como 1907",
+   "model": "poisson",
+   "tip": "Victoire Como 1907",
+   "confidence": 63,
+   "odds": 1.58,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-04",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Genoa — Como 1907",
+   "model": "elo",
+   "tip": "Victoire Como 1907",
+   "confidence": 58,
+   "odds": 1.74,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-04",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Stuttgart — 1. FC Köln",
+   "model": "poisson",
+   "tip": "Victoire Stuttgart",
+   "confidence": 69,
+   "odds": 1.45,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-04",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Stuttgart — 1. FC Köln",
+   "model": "elo",
+   "tip": "Victoire Stuttgart",
+   "confidence": 74,
+   "odds": 1.34,
    "score": null,
    "status": "pending"
   },
@@ -3024,6 +3120,30 @@ window.PRONOSTICS_DATA = {
    "odds": 2.79,
    "score": "3–0",
    "status": "win"
+  },
+  {
+   "date": "2026-08-20",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Rayo Vallecano — Alavés",
+   "model": "poisson",
+   "tip": "Victoire Rayo Vallecano",
+   "confidence": 48,
+   "odds": 2.09,
+   "score": "1–1",
+   "status": "loss"
+  },
+  {
+   "date": "2026-08-20",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Rayo Vallecano — Alavés",
+   "model": "elo",
+   "tip": "Victoire Rayo Vallecano",
+   "confidence": 51,
+   "odds": 1.97,
+   "score": "1–1",
+   "status": "loss"
   }
  ]
 };
