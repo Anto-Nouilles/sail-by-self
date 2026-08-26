@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-08-25 06:30 UTC",
+ "generatedAt": "2026-08-26 06:32 UTC",
  "demo": false,
  "leagues": [
   {
@@ -25,30 +25,6 @@ window.PRONOSTICS_DATA = {
   }
  ],
  "picks": [
-  {
-   "date": "2026-08-25",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Valencia — Real Betis",
-   "model": "poisson",
-   "tip": "Victoire Real Betis",
-   "confidence": 39,
-   "odds": 2.57,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-08-25",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Valencia — Real Betis",
-   "model": "elo",
-   "tip": "Victoire Valencia",
-   "confidence": 34,
-   "odds": 2.91,
-   "score": null,
-   "status": "pending"
-  },
   {
    "date": "2026-08-26",
    "league": "PD",
@@ -176,7 +152,7 @@ window.PRONOSTICS_DATA = {
    "match": "Alavés — Villarreal",
    "model": "poisson",
    "tip": "Victoire Villarreal",
-   "confidence": 46,
+   "confidence": 47,
    "odds": 2.15,
    "score": null,
    "status": "pending"
@@ -393,7 +369,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Real Betis",
    "confidence": 44,
-   "odds": 2.29,
+   "odds": 2.26,
    "score": null,
    "status": "pending"
   },
@@ -404,8 +380,8 @@ window.PRONOSTICS_DATA = {
    "match": "Levante — Real Betis",
    "model": "elo",
    "tip": "Victoire Real Betis",
-   "confidence": 45,
-   "odds": 2.22,
+   "confidence": 48,
+   "odds": 2.09,
    "score": null,
    "status": "pending"
   },
@@ -728,7 +704,7 @@ window.PRONOSTICS_DATA = {
    "match": "Celta — Athletic",
    "model": "poisson",
    "tip": "Victoire Celta",
-   "confidence": 61,
+   "confidence": 60,
    "odds": 1.65,
    "score": null,
    "status": "pending"
@@ -1064,8 +1040,8 @@ window.PRONOSTICS_DATA = {
    "match": "Real Betis — Real Madrid",
    "model": "poisson",
    "tip": "Victoire Real Madrid",
-   "confidence": 45,
-   "odds": 2.24,
+   "confidence": 44,
+   "odds": 2.27,
    "score": null,
    "status": "pending"
   },
@@ -1076,8 +1052,8 @@ window.PRONOSTICS_DATA = {
    "match": "Real Betis — Real Madrid",
    "model": "elo",
    "tip": "Victoire Real Madrid",
-   "confidence": 42,
-   "odds": 2.38,
+   "confidence": 39,
+   "odds": 2.55,
    "score": null,
    "status": "pending"
   },
@@ -1569,7 +1545,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Barça",
    "confidence": 67,
-   "odds": 1.5,
+   "odds": 1.49,
    "score": null,
    "status": "pending"
   },
@@ -1580,8 +1556,8 @@ window.PRONOSTICS_DATA = {
    "match": "Valencia — Barça",
    "model": "elo",
    "tip": "Victoire Barça",
-   "confidence": 59,
-   "odds": 1.69,
+   "confidence": 61,
+   "odds": 1.63,
    "score": null,
    "status": "pending"
   },
@@ -1593,7 +1569,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Alavés",
    "confidence": 44,
-   "odds": 2.25,
+   "odds": 2.26,
    "score": null,
    "status": "pending"
   },
@@ -1617,7 +1593,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Espanyol",
    "confidence": 48,
-   "odds": 2.09,
+   "odds": 2.1,
    "score": null,
    "status": "pending"
   },
@@ -1760,7 +1736,7 @@ window.PRONOSTICS_DATA = {
    "match": "Elche — Real Sociedad",
    "model": "poisson",
    "tip": "Victoire Elche",
-   "confidence": 44,
+   "confidence": 43,
    "odds": 2.3,
    "score": null,
    "status": "pending"
@@ -3072,6 +3048,30 @@ window.PRONOSTICS_DATA = {
    "odds": 1.58,
    "score": "4–0",
    "status": "win"
+  },
+  {
+   "date": "2026-08-25",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Valencia — Real Betis",
+   "model": "poisson",
+   "tip": "Victoire Real Betis",
+   "confidence": 39,
+   "odds": 2.57,
+   "score": "0–1",
+   "status": "win"
+  },
+  {
+   "date": "2026-08-25",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Valencia — Real Betis",
+   "model": "elo",
+   "tip": "Victoire Valencia",
+   "confidence": 34,
+   "odds": 2.91,
+   "score": "0–1",
+   "status": "loss"
   }
  ]
 };
