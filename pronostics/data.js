@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-08-27 17:08 UTC",
+ "generatedAt": "2026-08-28 17:55 UTC",
  "demo": false,
  "leagues": [
   {
@@ -25,54 +25,6 @@ window.PRONOSTICS_DATA = {
   }
  ],
  "picks": [
-  {
-   "date": "2026-08-27",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Celta — Osasuna",
-   "model": "poisson",
-   "tip": "Victoire Celta",
-   "confidence": 53,
-   "odds": 1.9,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-08-27",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Celta — Osasuna",
-   "model": "elo",
-   "tip": "Victoire Celta",
-   "confidence": 59,
-   "odds": 1.71,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-08-27",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Barça — Athletic",
-   "model": "poisson",
-   "tip": "Victoire Barça",
-   "confidence": 88,
-   "odds": 1.13,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-08-27",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Barça — Athletic",
-   "model": "elo",
-   "tip": "Victoire Barça",
-   "confidence": 81,
-   "odds": 1.24,
-   "score": null,
-   "status": "pending"
-  },
   {
    "date": "2026-08-28",
    "league": "FL1",
@@ -692,8 +644,8 @@ window.PRONOSTICS_DATA = {
    "match": "Celta — Athletic",
    "model": "elo",
    "tip": "Victoire Celta",
-   "confidence": 61,
-   "odds": 1.64,
+   "confidence": 58,
+   "odds": 1.72,
    "score": null,
    "status": "pending"
   },
@@ -824,8 +776,8 @@ window.PRONOSTICS_DATA = {
    "match": "Osasuna — Getafe",
    "model": "poisson",
    "tip": "Victoire Osasuna",
-   "confidence": 43,
-   "odds": 2.33,
+   "confidence": 44,
+   "odds": 2.29,
    "score": null,
    "status": "pending"
   },
@@ -835,9 +787,9 @@ window.PRONOSTICS_DATA = {
    "leagueName": "Liga",
    "match": "Osasuna — Getafe",
    "model": "elo",
-   "tip": "Victoire Getafe",
-   "confidence": 35,
-   "odds": 2.82,
+   "tip": "Victoire Osasuna",
+   "confidence": 37,
+   "odds": 2.73,
    "score": null,
    "status": "pending"
   },
@@ -945,7 +897,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Real Sociedad",
    "confidence": 43,
-   "odds": 2.35,
+   "odds": 2.31,
    "score": null,
    "status": "pending"
   },
@@ -955,9 +907,9 @@ window.PRONOSTICS_DATA = {
    "leagueName": "Liga",
    "match": "Real Sociedad — Celta",
    "model": "elo",
-   "tip": "Victoire Celta",
-   "confidence": 34,
-   "odds": 2.91,
+   "tip": "Victoire Real Sociedad",
+   "confidence": 38,
+   "odds": 2.65,
    "score": null,
    "status": "pending"
   },
@@ -1256,8 +1208,8 @@ window.PRONOSTICS_DATA = {
    "match": "Athletic — Atleti",
    "model": "poisson",
    "tip": "Victoire Atleti",
-   "confidence": 48,
-   "odds": 2.06,
+   "confidence": 49,
+   "odds": 2.03,
    "score": null,
    "status": "pending"
   },
@@ -1268,8 +1220,8 @@ window.PRONOSTICS_DATA = {
    "match": "Athletic — Atleti",
    "model": "elo",
    "tip": "Victoire Atleti",
-   "confidence": 51,
-   "odds": 1.95,
+   "confidence": 52,
+   "odds": 1.93,
    "score": null,
    "status": "pending"
   },
@@ -1532,8 +1484,8 @@ window.PRONOSTICS_DATA = {
    "match": "Valencia — Barça",
    "model": "elo",
    "tip": "Victoire Barça",
-   "confidence": 61,
-   "odds": 1.63,
+   "confidence": 62,
+   "odds": 1.61,
    "score": null,
    "status": "pending"
   },
@@ -1545,7 +1497,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Alavés",
    "confidence": 44,
-   "odds": 2.25,
+   "odds": 2.29,
    "score": null,
    "status": "pending"
   },
@@ -1556,8 +1508,8 @@ window.PRONOSTICS_DATA = {
    "match": "Alavés — Osasuna",
    "model": "elo",
    "tip": "Victoire Alavés",
-   "confidence": 54,
-   "odds": 1.87,
+   "confidence": 50,
+   "odds": 2.01,
    "score": null,
    "status": "pending"
   },
@@ -1689,7 +1641,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Getafe",
    "confidence": 34,
-   "odds": 2.97,
+   "odds": 2.92,
    "score": null,
    "status": "pending"
   },
@@ -1700,8 +1652,8 @@ window.PRONOSTICS_DATA = {
    "match": "Getafe — Celta",
    "model": "elo",
    "tip": "Victoire Getafe",
-   "confidence": 40,
-   "odds": 2.52,
+   "confidence": 44,
+   "odds": 2.29,
    "score": null,
    "status": "pending"
   },
@@ -1774,6 +1726,30 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Udinese",
    "confidence": 37,
    "odds": 2.74,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-11",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Stade Rennais — Marseille",
+   "model": "poisson",
+   "tip": "Victoire Stade Rennais",
+   "confidence": 39,
+   "odds": 2.56,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-11",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Stade Rennais — Marseille",
+   "model": "elo",
+   "tip": "Victoire Stade Rennais",
+   "confidence": 46,
+   "odds": 2.16,
    "score": null,
    "status": "pending"
   },
@@ -3071,6 +3047,54 @@ window.PRONOSTICS_DATA = {
    "confidence": 74,
    "odds": 1.35,
    "score": "4–1",
+   "status": "win"
+  },
+  {
+   "date": "2026-08-27",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Celta — Osasuna",
+   "model": "poisson",
+   "tip": "Victoire Celta",
+   "confidence": 53,
+   "odds": 1.9,
+   "score": "1–2",
+   "status": "loss"
+  },
+  {
+   "date": "2026-08-27",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Celta — Osasuna",
+   "model": "elo",
+   "tip": "Victoire Celta",
+   "confidence": 59,
+   "odds": 1.71,
+   "score": "1–2",
+   "status": "loss"
+  },
+  {
+   "date": "2026-08-27",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Barça — Athletic",
+   "model": "poisson",
+   "tip": "Victoire Barça",
+   "confidence": 88,
+   "odds": 1.13,
+   "score": "2–0",
+   "status": "win"
+  },
+  {
+   "date": "2026-08-27",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Barça — Athletic",
+   "model": "elo",
+   "tip": "Victoire Barça",
+   "confidence": 81,
+   "odds": 1.24,
+   "score": "2–0",
    "status": "win"
   }
  ]
