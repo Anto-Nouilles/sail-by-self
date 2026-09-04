@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-09-03 10:25 UTC",
+ "generatedAt": "2026-09-04 10:12 UTC",
  "demo": false,
  "leagues": [
   {
@@ -25,30 +25,6 @@ window.PRONOSTICS_DATA = {
   }
  ],
  "picks": [
-  {
-   "date": "2026-09-03",
-   "league": "FL1",
-   "leagueName": "Ligue 1",
-   "match": "Toulouse — Lille",
-   "model": "poisson",
-   "tip": "Victoire Lille",
-   "confidence": 41,
-   "odds": 2.44,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-09-03",
-   "league": "FL1",
-   "leagueName": "Ligue 1",
-   "match": "Toulouse — Lille",
-   "model": "elo",
-   "tip": "Victoire Lille",
-   "confidence": 46,
-   "odds": 2.19,
-   "score": null,
-   "status": "pending"
-  },
   {
    "date": "2026-09-04",
    "league": "FL1",
@@ -465,7 +441,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Stade Rennais",
    "confidence": 49,
-   "odds": 2.04,
+   "odds": 2.03,
    "score": null,
    "status": "pending"
   },
@@ -705,7 +681,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Stade Rennais",
    "confidence": 41,
-   "odds": 2.43,
+   "odds": 2.44,
    "score": null,
    "status": "pending"
   },
@@ -752,8 +728,8 @@ window.PRONOSTICS_DATA = {
    "match": "Lorient — Toulouse",
    "model": "poisson",
    "tip": "Victoire Lorient",
-   "confidence": 43,
-   "odds": 2.31,
+   "confidence": 44,
+   "odds": 2.29,
    "score": null,
    "status": "pending"
   },
@@ -764,8 +740,8 @@ window.PRONOSTICS_DATA = {
    "match": "Lorient — Toulouse",
    "model": "elo",
    "tip": "Victoire Lorient",
-   "confidence": 43,
-   "odds": 2.35,
+   "confidence": 45,
+   "odds": 2.23,
    "score": null,
    "status": "pending"
   },
@@ -777,7 +753,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Auxerre",
    "confidence": 49,
-   "odds": 2.05,
+   "odds": 2.06,
    "score": null,
    "status": "pending"
   },
@@ -1342,6 +1318,78 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Inter",
    "confidence": 75,
    "odds": 1.34,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-18",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Monaco — RC Lens",
+   "model": "poisson",
+   "tip": "Victoire RC Lens",
+   "confidence": 46,
+   "odds": 2.16,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-18",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Monaco — RC Lens",
+   "model": "elo",
+   "tip": "Victoire Monaco",
+   "confidence": 38,
+   "odds": 2.67,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-18",
+   "league": "PL",
+   "leagueName": "Premier League",
+   "match": "Brentford — Chelsea",
+   "model": "poisson",
+   "tip": "Victoire Brentford",
+   "confidence": 45,
+   "odds": 2.22,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-18",
+   "league": "PL",
+   "leagueName": "Premier League",
+   "match": "Brentford — Chelsea",
+   "model": "elo",
+   "tip": "Victoire Brentford",
+   "confidence": 49,
+   "odds": 2.05,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-18",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Bayern — Union Berlin",
+   "model": "poisson",
+   "tip": "Victoire Bayern",
+   "confidence": 92,
+   "odds": 1.09,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-09-18",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Bayern — Union Berlin",
+   "model": "elo",
+   "tip": "Victoire Bayern",
+   "confidence": 81,
+   "odds": 1.23,
    "score": null,
    "status": "pending"
   },
@@ -2735,6 +2783,30 @@ window.PRONOSTICS_DATA = {
    "confidence": 56,
    "odds": 1.8,
    "score": "1–0",
+   "status": "win"
+  },
+  {
+   "date": "2026-09-03",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Toulouse — Lille",
+   "model": "poisson",
+   "tip": "Victoire Lille",
+   "confidence": 41,
+   "odds": 2.44,
+   "score": "0–1",
+   "status": "win"
+  },
+  {
+   "date": "2026-09-03",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Toulouse — Lille",
+   "model": "elo",
+   "tip": "Victoire Lille",
+   "confidence": 46,
+   "odds": 2.19,
+   "score": "0–1",
    "status": "win"
   }
  ]
