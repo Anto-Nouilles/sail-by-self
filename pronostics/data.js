@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-09-15 10:43 UTC",
+ "generatedAt": "2026-09-16 10:31 UTC",
  "demo": false,
  "leagues": [
   {
@@ -26,86 +26,14 @@ window.PRONOSTICS_DATA = {
  ],
  "picks": [
   {
-   "date": "2026-09-15",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Rayo Vallecano — Espanyol",
-   "model": "poisson",
-   "tip": "Victoire Espanyol",
-   "confidence": 69,
-   "odds": 1.45,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-09-15",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Rayo Vallecano — Espanyol",
-   "model": "elo",
-   "tip": "Victoire Rayo Vallecano",
-   "confidence": 37,
-   "odds": 2.68,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-09-15",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Alavés — Valencia",
-   "model": "poisson",
-   "tip": "Victoire Alavés",
-   "confidence": 95,
-   "odds": 1.06,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-09-15",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Alavés — Valencia",
-   "model": "elo",
-   "tip": "Victoire Alavés",
-   "confidence": 60,
-   "odds": 1.66,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-09-15",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Elche — Real Madrid",
-   "model": "poisson",
-   "tip": "Victoire Real Madrid",
-   "confidence": 93,
-   "odds": 1.08,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-09-15",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Elche — Real Madrid",
-   "model": "elo",
-   "tip": "Victoire Real Madrid",
-   "confidence": 43,
-   "odds": 2.31,
-   "score": null,
-   "status": "pending"
-  },
-  {
    "date": "2026-09-16",
    "league": "PD",
    "leagueName": "Liga",
    "match": "Deportivo — Sevilla FC",
    "model": "poisson",
    "tip": "Victoire Deportivo",
-   "confidence": 48,
-   "odds": 2.09,
+   "confidence": 47,
+   "odds": 2.13,
    "score": null,
    "status": "pending"
   },
@@ -129,7 +57,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Atleti",
    "confidence": 74,
-   "odds": 1.35,
+   "odds": 1.36,
    "score": null,
    "status": "pending"
   },
@@ -152,8 +80,8 @@ window.PRONOSTICS_DATA = {
    "match": "Levante — Athletic",
    "model": "poisson",
    "tip": "Victoire Athletic",
-   "confidence": 43,
-   "odds": 2.3,
+   "confidence": 44,
+   "odds": 2.26,
    "score": null,
    "status": "pending"
   },
@@ -177,7 +105,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Barça",
    "confidence": 96,
-   "odds": 1.04,
+   "odds": 1.05,
    "score": null,
    "status": "pending"
   },
@@ -200,8 +128,8 @@ window.PRONOSTICS_DATA = {
    "match": "Real Betis — Getafe",
    "model": "poisson",
    "tip": "Victoire Real Betis",
-   "confidence": 57,
-   "odds": 1.75,
+   "confidence": 56,
+   "odds": 1.77,
    "score": null,
    "status": "pending"
   },
@@ -224,8 +152,8 @@ window.PRONOSTICS_DATA = {
    "match": "Málaga — Villarreal",
    "model": "poisson",
    "tip": "Victoire Villarreal",
-   "confidence": 55,
-   "odds": 1.81,
+   "confidence": 56,
+   "odds": 1.79,
    "score": null,
    "status": "pending"
   },
@@ -296,8 +224,8 @@ window.PRONOSTICS_DATA = {
    "match": "Espanyol — Elche",
    "model": "poisson",
    "tip": "Victoire Espanyol",
-   "confidence": 84,
-   "odds": 1.2,
+   "confidence": 78,
+   "odds": 1.29,
    "score": null,
    "status": "pending"
   },
@@ -308,8 +236,8 @@ window.PRONOSTICS_DATA = {
    "match": "Espanyol — Elche",
    "model": "elo",
    "tip": "Victoire Espanyol",
-   "confidence": 55,
-   "odds": 1.83,
+   "confidence": 54,
+   "odds": 1.84,
    "score": null,
    "status": "pending"
   },
@@ -608,8 +536,8 @@ window.PRONOSTICS_DATA = {
    "match": "Osasuna — Rayo Vallecano",
    "model": "poisson",
    "tip": "Victoire Osasuna",
-   "confidence": 50,
-   "odds": 1.99,
+   "confidence": 43,
+   "odds": 2.32,
    "score": null,
    "status": "pending"
   },
@@ -620,8 +548,8 @@ window.PRONOSTICS_DATA = {
    "match": "Osasuna — Rayo Vallecano",
    "model": "elo",
    "tip": "Victoire Osasuna",
-   "confidence": 47,
-   "odds": 2.14,
+   "confidence": 44,
+   "odds": 2.27,
    "score": null,
    "status": "pending"
   },
@@ -632,8 +560,8 @@ window.PRONOSTICS_DATA = {
    "match": "Athletic — Alavés",
    "model": "poisson",
    "tip": "Victoire Alavés",
-   "confidence": 50,
-   "odds": 2.0,
+   "confidence": 44,
+   "odds": 2.28,
    "score": null,
    "status": "pending"
   },
@@ -644,8 +572,8 @@ window.PRONOSTICS_DATA = {
    "match": "Athletic — Alavés",
    "model": "elo",
    "tip": "Victoire Athletic",
-   "confidence": 39,
-   "odds": 2.54,
+   "confidence": 43,
+   "odds": 2.3,
    "score": null,
    "status": "pending"
   },
@@ -656,8 +584,8 @@ window.PRONOSTICS_DATA = {
    "match": "Celta — Santander",
    "model": "poisson",
    "tip": "Victoire Santander",
-   "confidence": 45,
-   "odds": 2.22,
+   "confidence": 46,
+   "odds": 2.18,
    "score": null,
    "status": "pending"
   },
@@ -681,7 +609,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Barça",
    "confidence": 79,
-   "odds": 1.27,
+   "odds": 1.26,
    "score": null,
    "status": "pending"
   },
@@ -1089,7 +1017,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Match nul",
    "confidence": 45,
-   "odds": 2.24,
+   "odds": 2.23,
    "score": null,
    "status": "pending"
   },
@@ -1112,8 +1040,8 @@ window.PRONOSTICS_DATA = {
    "match": "Atleti — Real Madrid",
    "model": "poisson",
    "tip": "Victoire Real Madrid",
-   "confidence": 57,
-   "odds": 1.77,
+   "confidence": 52,
+   "odds": 1.94,
    "score": null,
    "status": "pending"
   },
@@ -1124,8 +1052,8 @@ window.PRONOSTICS_DATA = {
    "match": "Atleti — Real Madrid",
    "model": "elo",
    "tip": "Victoire Atleti",
-   "confidence": 42,
-   "odds": 2.37,
+   "confidence": 40,
+   "odds": 2.51,
    "score": null,
    "status": "pending"
   },
@@ -1136,8 +1064,8 @@ window.PRONOSTICS_DATA = {
    "match": "Deportivo — Real Betis",
    "model": "poisson",
    "tip": "Victoire Deportivo",
-   "confidence": 51,
-   "odds": 1.95,
+   "confidence": 50,
+   "odds": 1.98,
    "score": null,
    "status": "pending"
   },
@@ -1160,8 +1088,8 @@ window.PRONOSTICS_DATA = {
    "match": "Villarreal — Levante",
    "model": "poisson",
    "tip": "Victoire Villarreal",
-   "confidence": 43,
-   "odds": 2.34,
+   "confidence": 42,
+   "odds": 2.39,
    "score": null,
    "status": "pending"
   },
@@ -1184,8 +1112,8 @@ window.PRONOSTICS_DATA = {
    "match": "Valencia — Real Sociedad",
    "model": "poisson",
    "tip": "Victoire Real Sociedad",
-   "confidence": 61,
-   "odds": 1.65,
+   "confidence": 49,
+   "odds": 2.04,
    "score": null,
    "status": "pending"
   },
@@ -1196,8 +1124,8 @@ window.PRONOSTICS_DATA = {
    "match": "Valencia — Real Sociedad",
    "model": "elo",
    "tip": "Victoire Valencia",
-   "confidence": 36,
-   "odds": 2.75,
+   "confidence": 41,
+   "odds": 2.47,
    "score": null,
    "status": "pending"
   },
@@ -2016,6 +1944,78 @@ window.PRONOSTICS_DATA = {
    "odds": 2.86,
    "score": "1–2",
    "status": "loss"
+  },
+  {
+   "date": "2026-09-15",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Rayo Vallecano — Espanyol",
+   "model": "poisson",
+   "tip": "Victoire Espanyol",
+   "confidence": 69,
+   "odds": 1.45,
+   "score": "2–1",
+   "status": "loss"
+  },
+  {
+   "date": "2026-09-15",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Rayo Vallecano — Espanyol",
+   "model": "elo",
+   "tip": "Victoire Rayo Vallecano",
+   "confidence": 37,
+   "odds": 2.68,
+   "score": "2–1",
+   "status": "win"
+  },
+  {
+   "date": "2026-09-15",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Alavés — Valencia",
+   "model": "poisson",
+   "tip": "Victoire Alavés",
+   "confidence": 95,
+   "odds": 1.06,
+   "score": "0–1",
+   "status": "loss"
+  },
+  {
+   "date": "2026-09-15",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Alavés — Valencia",
+   "model": "elo",
+   "tip": "Victoire Alavés",
+   "confidence": 60,
+   "odds": 1.66,
+   "score": "0–1",
+   "status": "loss"
+  },
+  {
+   "date": "2026-09-15",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Elche — Real Madrid",
+   "model": "poisson",
+   "tip": "Victoire Real Madrid",
+   "confidence": 93,
+   "odds": 1.07,
+   "score": "2–3",
+   "status": "win"
+  },
+  {
+   "date": "2026-09-15",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Elche — Real Madrid",
+   "model": "elo",
+   "tip": "Victoire Real Madrid",
+   "confidence": 43,
+   "odds": 2.31,
+   "score": "2–3",
+   "status": "win"
   }
  ]
 };
