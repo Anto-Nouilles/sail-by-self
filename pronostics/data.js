@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-09-17 10:41 UTC",
+ "generatedAt": "2026-09-18 10:16 UTC",
  "demo": false,
  "leagues": [
   {
@@ -25,54 +25,6 @@ window.PRONOSTICS_DATA = {
   }
  ],
  "picks": [
-  {
-   "date": "2026-09-17",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Real Betis — Getafe",
-   "model": "poisson",
-   "tip": "Victoire Real Betis",
-   "confidence": 58,
-   "odds": 1.74,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-09-17",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Real Betis — Getafe",
-   "model": "elo",
-   "tip": "Victoire Real Betis",
-   "confidence": 54,
-   "odds": 1.85,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-09-17",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Málaga — Villarreal",
-   "model": "poisson",
-   "tip": "Victoire Villarreal",
-   "confidence": 53,
-   "odds": 1.89,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-09-17",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Málaga — Villarreal",
-   "model": "elo",
-   "tip": "Victoire Málaga",
-   "confidence": 46,
-   "odds": 2.19,
-   "score": null,
-   "status": "pending"
-  },
   {
    "date": "2026-09-18",
    "league": "FL1",
@@ -129,7 +81,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Espanyol",
    "confidence": 79,
-   "odds": 1.26,
+   "odds": 1.27,
    "score": null,
    "status": "pending"
   },
@@ -440,8 +392,8 @@ window.PRONOSTICS_DATA = {
    "match": "Osasuna — Rayo Vallecano",
    "model": "poisson",
    "tip": "Victoire Rayo Vallecano",
-   "confidence": 46,
-   "odds": 2.17,
+   "confidence": 47,
+   "odds": 2.13,
    "score": null,
    "status": "pending"
   },
@@ -464,8 +416,8 @@ window.PRONOSTICS_DATA = {
    "match": "Athletic — Alavés",
    "model": "poisson",
    "tip": "Victoire Alavés",
-   "confidence": 41,
-   "odds": 2.43,
+   "confidence": 42,
+   "odds": 2.4,
    "score": null,
    "status": "pending"
   },
@@ -488,8 +440,8 @@ window.PRONOSTICS_DATA = {
    "match": "Celta — Santander",
    "model": "poisson",
    "tip": "Victoire Santander",
-   "confidence": 36,
-   "odds": 2.77,
+   "confidence": 37,
+   "odds": 2.73,
    "score": null,
    "status": "pending"
   },
@@ -512,8 +464,8 @@ window.PRONOSTICS_DATA = {
    "match": "Sevilla FC — Barça",
    "model": "poisson",
    "tip": "Victoire Barça",
-   "confidence": 70,
-   "odds": 1.43,
+   "confidence": 71,
+   "odds": 1.41,
    "score": null,
    "status": "pending"
   },
@@ -932,8 +884,8 @@ window.PRONOSTICS_DATA = {
    "match": "Getafe — Málaga",
    "model": "elo",
    "tip": "Victoire Getafe",
-   "confidence": 46,
-   "odds": 2.15,
+   "confidence": 49,
+   "odds": 2.05,
    "score": null,
    "status": "pending"
   },
@@ -944,8 +896,8 @@ window.PRONOSTICS_DATA = {
    "match": "Atleti — Real Madrid",
    "model": "poisson",
    "tip": "Victoire Atleti",
-   "confidence": 41,
-   "odds": 2.44,
+   "confidence": 40,
+   "odds": 2.48,
    "score": null,
    "status": "pending"
   },
@@ -968,8 +920,8 @@ window.PRONOSTICS_DATA = {
    "match": "Deportivo — Real Betis",
    "model": "poisson",
    "tip": "Victoire Deportivo",
-   "confidence": 46,
-   "odds": 2.18,
+   "confidence": 40,
+   "odds": 2.49,
    "score": null,
    "status": "pending"
   },
@@ -980,8 +932,8 @@ window.PRONOSTICS_DATA = {
    "match": "Deportivo — Real Betis",
    "model": "elo",
    "tip": "Victoire Deportivo",
-   "confidence": 39,
-   "odds": 2.55,
+   "confidence": 37,
+   "odds": 2.68,
    "score": null,
    "status": "pending"
   },
@@ -992,8 +944,8 @@ window.PRONOSTICS_DATA = {
    "match": "Villarreal — Levante",
    "model": "poisson",
    "tip": "Victoire Villarreal",
-   "confidence": 44,
-   "odds": 2.25,
+   "confidence": 54,
+   "odds": 1.85,
    "score": null,
    "status": "pending"
   },
@@ -1004,8 +956,8 @@ window.PRONOSTICS_DATA = {
    "match": "Villarreal — Levante",
    "model": "elo",
    "tip": "Victoire Villarreal",
-   "confidence": 39,
-   "odds": 2.58,
+   "confidence": 43,
+   "odds": 2.33,
    "score": null,
    "status": "pending"
   },
@@ -1016,8 +968,8 @@ window.PRONOSTICS_DATA = {
    "match": "Valencia — Real Sociedad",
    "model": "poisson",
    "tip": "Victoire Real Sociedad",
-   "confidence": 46,
-   "odds": 2.16,
+   "confidence": 47,
+   "odds": 2.13,
    "score": null,
    "status": "pending"
   },
@@ -1992,6 +1944,54 @@ window.PRONOSTICS_DATA = {
    "odds": 1.65,
    "score": "7–2",
    "status": "win"
+  },
+  {
+   "date": "2026-09-17",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Real Betis — Getafe",
+   "model": "poisson",
+   "tip": "Victoire Real Betis",
+   "confidence": 58,
+   "odds": 1.74,
+   "score": "1–0",
+   "status": "win"
+  },
+  {
+   "date": "2026-09-17",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Real Betis — Getafe",
+   "model": "elo",
+   "tip": "Victoire Real Betis",
+   "confidence": 54,
+   "odds": 1.85,
+   "score": "1–0",
+   "status": "win"
+  },
+  {
+   "date": "2026-09-17",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Málaga — Villarreal",
+   "model": "poisson",
+   "tip": "Victoire Villarreal",
+   "confidence": 53,
+   "odds": 1.89,
+   "score": "1–3",
+   "status": "win"
+  },
+  {
+   "date": "2026-09-17",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Málaga — Villarreal",
+   "model": "elo",
+   "tip": "Victoire Málaga",
+   "confidence": 46,
+   "odds": 2.19,
+   "score": "1–3",
+   "status": "loss"
   }
  ]
 };
