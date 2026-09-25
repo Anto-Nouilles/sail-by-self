@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-09-24 10:47 UTC",
+ "generatedAt": "2026-09-25 10:51 UTC",
  "demo": false,
  "leagues": [
   {
@@ -25,6 +25,78 @@ window.PRONOSTICS_DATA = {
   }
  ],
  "picks": [
+  {
+   "date": "2026-10-09",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "RC Lens — Olympique Lyon",
+   "model": "poisson",
+   "tip": "Victoire Olympique Lyon",
+   "confidence": 77,
+   "odds": 1.3,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-09",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "RC Lens — Olympique Lyon",
+   "model": "elo",
+   "tip": "Victoire Olympique Lyon",
+   "confidence": 38,
+   "odds": 2.61,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-09",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Málaga — Espanyol",
+   "model": "poisson",
+   "tip": "Victoire Espanyol",
+   "confidence": 61,
+   "odds": 1.64,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-09",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Málaga — Espanyol",
+   "model": "elo",
+   "tip": "Victoire Málaga",
+   "confidence": 38,
+   "odds": 2.65,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-09",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Dortmund — Bremen",
+   "model": "poisson",
+   "tip": "Victoire Dortmund",
+   "confidence": 88,
+   "odds": 1.13,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-09",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Dortmund — Bremen",
+   "model": "elo",
+   "tip": "Victoire Dortmund",
+   "confidence": 52,
+   "odds": 1.92,
+   "score": null,
+   "status": "pending"
+  },
   {
    "date": "2026-09-11",
    "league": "PD",
