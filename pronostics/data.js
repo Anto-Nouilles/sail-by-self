@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-09-27 11:04 UTC",
+ "generatedAt": "2026-09-28 12:25 UTC",
  "demo": false,
  "leagues": [
   {
@@ -1078,6 +1078,102 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Freiburg",
    "confidence": 53,
    "odds": 1.9,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-12",
+   "league": "PL",
+   "leagueName": "Premier League",
+   "match": "Coventry City — Newcastle",
+   "model": "poisson",
+   "tip": "Victoire Newcastle",
+   "confidence": 84,
+   "odds": 1.19,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-12",
+   "league": "PL",
+   "leagueName": "Premier League",
+   "match": "Coventry City — Newcastle",
+   "model": "elo",
+   "tip": "Victoire Newcastle",
+   "confidence": 35,
+   "odds": 2.82,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-12",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Levante — Sevilla FC",
+   "model": "poisson",
+   "tip": "Victoire Sevilla FC",
+   "confidence": 46,
+   "odds": 2.16,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-12",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Levante — Sevilla FC",
+   "model": "elo",
+   "tip": "Victoire Levante",
+   "confidence": 35,
+   "odds": 2.87,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-12",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Atalanta — Venezia FC",
+   "model": "poisson",
+   "tip": "Victoire Atalanta",
+   "confidence": 63,
+   "odds": 1.59,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-12",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Atalanta — Venezia FC",
+   "model": "elo",
+   "tip": "Victoire Atalanta",
+   "confidence": 55,
+   "odds": 1.81,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-12",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Torino — Udinese",
+   "model": "poisson",
+   "tip": "Victoire Udinese",
+   "confidence": 42,
+   "odds": 2.36,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-12",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Torino — Udinese",
+   "model": "elo",
+   "tip": "Victoire Torino",
+   "confidence": 44,
+   "odds": 2.26,
    "score": null,
    "status": "pending"
   },
