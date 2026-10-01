@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-09-30 11:37 UTC",
+ "generatedAt": "2026-10-01 12:06 UTC",
  "demo": false,
  "leagues": [
   {
@@ -18,6 +18,10 @@ window.PRONOSTICS_DATA = {
   {
    "code": "SA",
    "name": "Serie A"
+  },
+  {
+   "code": "BL1",
+   "name": "Bundesliga"
   }
  ],
  "picks": [
@@ -66,6 +70,30 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Málaga",
    "confidence": 38,
    "odds": 2.65,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-09",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Dortmund — Bremen",
+   "model": "poisson",
+   "tip": "Victoire Dortmund",
+   "confidence": 88,
+   "odds": 1.13,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-09",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Dortmund — Bremen",
+   "model": "elo",
+   "tip": "Victoire Dortmund",
+   "confidence": 52,
+   "odds": 1.92,
    "score": null,
    "status": "pending"
   },
@@ -502,6 +530,150 @@ window.PRONOSTICS_DATA = {
    "status": "pending"
   },
   {
+   "date": "2026-10-10",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Mainz — Leverkusen",
+   "model": "poisson",
+   "tip": "Victoire Mainz",
+   "confidence": 51,
+   "odds": 1.95,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-10",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Mainz — Leverkusen",
+   "model": "elo",
+   "tip": "Victoire Mainz",
+   "confidence": 42,
+   "odds": 2.36,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-10",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "SC Paderborn — Stuttgart",
+   "model": "poisson",
+   "tip": "Victoire SC Paderborn",
+   "confidence": 44,
+   "odds": 2.25,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-10",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "SC Paderborn — Stuttgart",
+   "model": "elo",
+   "tip": "Victoire SC Paderborn",
+   "confidence": 47,
+   "odds": 2.14,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-10",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Union Berlin — Elversberg",
+   "model": "poisson",
+   "tip": "Victoire Elversberg",
+   "confidence": 79,
+   "odds": 1.27,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-10",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Union Berlin — Elversberg",
+   "model": "elo",
+   "tip": "Victoire Elversberg",
+   "confidence": 37,
+   "odds": 2.67,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-10",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Hoffenheim — HSV",
+   "model": "poisson",
+   "tip": "Victoire Hoffenheim",
+   "confidence": 92,
+   "odds": 1.08,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-10",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Hoffenheim — HSV",
+   "model": "elo",
+   "tip": "Victoire Hoffenheim",
+   "confidence": 47,
+   "odds": 2.14,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-10",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Augsburg — Bayern",
+   "model": "poisson",
+   "tip": "Victoire Bayern",
+   "confidence": 64,
+   "odds": 1.56,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-10",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Augsburg — Bayern",
+   "model": "elo",
+   "tip": "Victoire Augsburg",
+   "confidence": 39,
+   "odds": 2.59,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-10",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "RB Leipzig — Frankfurt",
+   "model": "poisson",
+   "tip": "Victoire RB Leipzig",
+   "confidence": 84,
+   "odds": 1.2,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-10",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "RB Leipzig — Frankfurt",
+   "model": "elo",
+   "tip": "Victoire RB Leipzig",
+   "confidence": 44,
+   "odds": 2.28,
+   "score": null,
+   "status": "pending"
+  },
+  {
    "date": "2026-10-11",
    "league": "FL1",
    "leagueName": "Ligue 1",
@@ -858,6 +1030,54 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Cagliari",
    "confidence": 47,
    "odds": 2.13,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-11",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "1. FC Köln — M'gladbach",
+   "model": "poisson",
+   "tip": "Victoire 1. FC Köln",
+   "confidence": 83,
+   "odds": 1.21,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-11",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "1. FC Köln — M'gladbach",
+   "model": "elo",
+   "tip": "Victoire 1. FC Köln",
+   "confidence": 51,
+   "odds": 1.95,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-11",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Freiburg — Schalke",
+   "model": "poisson",
+   "tip": "Victoire Freiburg",
+   "confidence": 80,
+   "odds": 1.25,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-11",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Freiburg — Schalke",
+   "model": "elo",
+   "tip": "Victoire Freiburg",
+   "confidence": 53,
+   "odds": 1.9,
    "score": null,
    "status": "pending"
   },
