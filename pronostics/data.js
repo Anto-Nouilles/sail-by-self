@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-10-01 12:06 UTC",
+ "generatedAt": "2026-10-02 11:37 UTC",
  "demo": false,
  "leagues": [
   {
@@ -1174,6 +1174,102 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Torino",
    "confidence": 44,
    "odds": 2.26,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-16",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Le Mans — Toulouse",
+   "model": "poisson",
+   "tip": "Victoire Le Mans",
+   "confidence": 57,
+   "odds": 1.75,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-16",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Le Mans — Toulouse",
+   "model": "elo",
+   "tip": "Victoire Le Mans",
+   "confidence": 48,
+   "odds": 2.1,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-16",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Deportivo — Levante",
+   "model": "poisson",
+   "tip": "Victoire Deportivo",
+   "confidence": 66,
+   "odds": 1.52,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-16",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Deportivo — Levante",
+   "model": "elo",
+   "tip": "Victoire Deportivo",
+   "confidence": 51,
+   "odds": 1.95,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-16",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Frosinone — Sassuolo",
+   "model": "poisson",
+   "tip": "Victoire Frosinone",
+   "confidence": 67,
+   "odds": 1.5,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-16",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Frosinone — Sassuolo",
+   "model": "elo",
+   "tip": "Victoire Frosinone",
+   "confidence": 50,
+   "odds": 1.98,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-16",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Frankfurt — 1. FC Köln",
+   "model": "poisson",
+   "tip": "Victoire Frankfurt",
+   "confidence": 73,
+   "odds": 1.37,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-16",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Frankfurt — 1. FC Köln",
+   "model": "elo",
+   "tip": "Victoire Frankfurt",
+   "confidence": 49,
+   "odds": 2.05,
    "score": null,
    "status": "pending"
   },
