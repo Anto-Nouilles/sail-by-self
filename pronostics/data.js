@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-10-05 13:06 UTC",
+ "generatedAt": "2026-10-06 12:28 UTC",
  "demo": false,
  "leagues": [
   {
@@ -2328,30 +2328,6 @@ window.PRONOSTICS_DATA = {
    "odds": 2.28,
    "score": null,
    "status": "pending"
-  },
-  {
-   "date": "2026-09-14",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Villarreal — Real Betis",
-   "model": "poisson",
-   "tip": "Victoire Real Betis",
-   "confidence": 39,
-   "odds": 2.53,
-   "score": "1–2",
-   "status": "win"
-  },
-  {
-   "date": "2026-09-14",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Villarreal — Real Betis",
-   "model": "elo",
-   "tip": "Victoire Villarreal",
-   "confidence": 35,
-   "odds": 2.86,
-   "score": "1–2",
-   "status": "loss"
   },
   {
    "date": "2026-09-15",
