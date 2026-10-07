@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-10-06 12:28 UTC",
+ "generatedAt": "2026-10-07 12:21 UTC",
  "demo": false,
  "leagues": [
   {
@@ -2330,76 +2330,28 @@ window.PRONOSTICS_DATA = {
    "status": "pending"
   },
   {
-   "date": "2026-09-15",
+   "date": "2026-10-21",
    "league": "PD",
    "leagueName": "Liga",
-   "match": "Rayo Vallecano — Espanyol",
+   "match": "Levante — Athletic",
    "model": "poisson",
-   "tip": "Victoire Espanyol",
-   "confidence": 69,
-   "odds": 1.45,
-   "score": "2–1",
-   "status": "loss"
+   "tip": "Victoire Athletic",
+   "confidence": 45,
+   "odds": 2.22,
+   "score": null,
+   "status": "pending"
   },
   {
-   "date": "2026-09-15",
+   "date": "2026-10-21",
    "league": "PD",
    "leagueName": "Liga",
-   "match": "Rayo Vallecano — Espanyol",
+   "match": "Levante — Athletic",
    "model": "elo",
-   "tip": "Victoire Rayo Vallecano",
-   "confidence": 37,
-   "odds": 2.68,
-   "score": "2–1",
-   "status": "win"
-  },
-  {
-   "date": "2026-09-15",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Alavés — Valencia",
-   "model": "poisson",
-   "tip": "Victoire Alavés",
-   "confidence": 95,
-   "odds": 1.06,
-   "score": "0–1",
-   "status": "loss"
-  },
-  {
-   "date": "2026-09-15",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Alavés — Valencia",
-   "model": "elo",
-   "tip": "Victoire Alavés",
-   "confidence": 60,
-   "odds": 1.66,
-   "score": "0–1",
-   "status": "loss"
-  },
-  {
-   "date": "2026-09-15",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Elche — Real Madrid",
-   "model": "poisson",
-   "tip": "Victoire Real Madrid",
-   "confidence": 93,
-   "odds": 1.07,
-   "score": "2–3",
-   "status": "win"
-  },
-  {
-   "date": "2026-09-15",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Elche — Real Madrid",
-   "model": "elo",
-   "tip": "Victoire Real Madrid",
-   "confidence": 43,
-   "odds": 2.31,
-   "score": "2–3",
-   "status": "win"
+   "tip": "Victoire Levante",
+   "confidence": 38,
+   "odds": 2.64,
+   "score": null,
+   "status": "pending"
   },
   {
    "date": "2026-09-16",
