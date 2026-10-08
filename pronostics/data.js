@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-10-07 12:21 UTC",
+ "generatedAt": "2026-10-08 12:30 UTC",
  "demo": false,
  "leagues": [
   {
@@ -2352,78 +2352,6 @@ window.PRONOSTICS_DATA = {
    "odds": 2.64,
    "score": null,
    "status": "pending"
-  },
-  {
-   "date": "2026-09-16",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Deportivo — Sevilla FC",
-   "model": "poisson",
-   "tip": "Victoire Deportivo",
-   "confidence": 47,
-   "odds": 2.13,
-   "score": "0–1",
-   "status": "loss"
-  },
-  {
-   "date": "2026-09-16",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Deportivo — Sevilla FC",
-   "model": "elo",
-   "tip": "Victoire Deportivo",
-   "confidence": 46,
-   "odds": 2.18,
-   "score": "0–1",
-   "status": "loss"
-  },
-  {
-   "date": "2026-09-16",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Atleti — Osasuna",
-   "model": "poisson",
-   "tip": "Victoire Atleti",
-   "confidence": 73,
-   "odds": 1.36,
-   "score": "4–0",
-   "status": "win"
-  },
-  {
-   "date": "2026-09-16",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Atleti — Osasuna",
-   "model": "elo",
-   "tip": "Victoire Atleti",
-   "confidence": 53,
-   "odds": 1.87,
-   "score": "4–0",
-   "status": "win"
-  },
-  {
-   "date": "2026-09-16",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Barça — Santander",
-   "model": "poisson",
-   "tip": "Victoire Barça",
-   "confidence": 96,
-   "odds": 1.04,
-   "score": "7–2",
-   "status": "win"
-  },
-  {
-   "date": "2026-09-16",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Barça — Santander",
-   "model": "elo",
-   "tip": "Victoire Barça",
-   "confidence": 60,
-   "odds": 1.65,
-   "score": "7–2",
-   "status": "win"
   },
   {
    "date": "2026-09-17",
