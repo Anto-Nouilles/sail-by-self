@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-10-08 12:30 UTC",
+ "generatedAt": "2026-10-09 12:19 UTC",
  "demo": false,
  "leagues": [
   {
@@ -2354,52 +2354,124 @@ window.PRONOSTICS_DATA = {
    "status": "pending"
   },
   {
-   "date": "2026-09-17",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Real Betis — Getafe",
+   "date": "2026-10-23",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Brest — Nice",
    "model": "poisson",
-   "tip": "Victoire Real Betis",
-   "confidence": 58,
-   "odds": 1.74,
-   "score": "1–0",
-   "status": "win"
-  },
-  {
-   "date": "2026-09-17",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Real Betis — Getafe",
-   "model": "elo",
-   "tip": "Victoire Real Betis",
-   "confidence": 54,
-   "odds": 1.85,
-   "score": "1–0",
-   "status": "win"
-  },
-  {
-   "date": "2026-09-17",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Málaga — Villarreal",
-   "model": "poisson",
-   "tip": "Victoire Villarreal",
+   "tip": "Victoire Brest",
    "confidence": 53,
-   "odds": 1.89,
-   "score": "1–3",
-   "status": "win"
+   "odds": 1.88,
+   "score": null,
+   "status": "pending"
   },
   {
-   "date": "2026-09-17",
+   "date": "2026-10-23",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Brest — Nice",
+   "model": "elo",
+   "tip": "Victoire Brest",
+   "confidence": 44,
+   "odds": 2.26,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-23",
+   "league": "PL",
+   "leagueName": "Premier League",
+   "match": "Ipswich Town — Nottingham",
+   "model": "poisson",
+   "tip": "Victoire Nottingham",
+   "confidence": 38,
+   "odds": 2.66,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-23",
+   "league": "PL",
+   "leagueName": "Premier League",
+   "match": "Ipswich Town — Nottingham",
+   "model": "elo",
+   "tip": "Victoire Ipswich Town",
+   "confidence": 44,
+   "odds": 2.27,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-23",
    "league": "PD",
    "leagueName": "Liga",
-   "match": "Málaga — Villarreal",
+   "match": "Alavés — Málaga",
+   "model": "poisson",
+   "tip": "Victoire Alavés",
+   "confidence": 81,
+   "odds": 1.24,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-23",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Alavés — Málaga",
    "model": "elo",
-   "tip": "Victoire Málaga",
-   "confidence": 46,
-   "odds": 2.19,
-   "score": "1–3",
-   "status": "loss"
+   "tip": "Victoire Alavés",
+   "confidence": 57,
+   "odds": 1.74,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-23",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Torino — Monza",
+   "model": "poisson",
+   "tip": "Victoire Monza",
+   "confidence": 40,
+   "odds": 2.53,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-23",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Torino — Monza",
+   "model": "elo",
+   "tip": "Victoire Torino",
+   "confidence": 44,
+   "odds": 2.27,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-23",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Stuttgart — M'gladbach",
+   "model": "poisson",
+   "tip": "Victoire Stuttgart",
+   "confidence": 83,
+   "odds": 1.21,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-23",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Stuttgart — M'gladbach",
+   "model": "elo",
+   "tip": "Victoire Stuttgart",
+   "confidence": 51,
+   "odds": 1.98,
+   "score": null,
+   "status": "pending"
   },
   {
    "date": "2026-09-18",
