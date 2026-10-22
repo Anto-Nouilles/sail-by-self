@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-10-21 10:52 UTC",
+ "generatedAt": "2026-10-22 10:53 UTC",
  "demo": false,
  "leagues": [
   {
@@ -25,30 +25,6 @@ window.PRONOSTICS_DATA = {
   }
  ],
  "picks": [
-  {
-   "date": "2026-10-21",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Levante — Athletic",
-   "model": "poisson",
-   "tip": "Victoire Athletic",
-   "confidence": 41,
-   "odds": 2.47,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-10-21",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Levante — Athletic",
-   "model": "elo",
-   "tip": "Victoire Levante",
-   "confidence": 38,
-   "odds": 2.61,
-   "score": null,
-   "status": "pending"
-  },
   {
    "date": "2026-10-23",
    "league": "FL1",
@@ -166,30 +142,6 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Stuttgart",
    "confidence": 57,
    "odds": 1.76,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-10-24",
-   "league": "FL1",
-   "leagueName": "Ligue 1",
-   "match": "Toulouse — Troyes",
-   "model": "poisson",
-   "tip": "Victoire Toulouse",
-   "confidence": 81,
-   "odds": 1.24,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-10-24",
-   "league": "FL1",
-   "leagueName": "Ligue 1",
-   "match": "Toulouse — Troyes",
-   "model": "elo",
-   "tip": "Victoire Toulouse",
-   "confidence": 59,
-   "odds": 1.69,
    "score": null,
    "status": "pending"
   },
@@ -321,7 +273,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Rayo Vallecano",
    "confidence": 51,
-   "odds": 1.96,
+   "odds": 1.95,
    "score": null,
    "status": "pending"
   },
@@ -345,7 +297,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Espanyol",
    "confidence": 50,
-   "odds": 1.99,
+   "odds": 2.01,
    "score": null,
    "status": "pending"
   },
@@ -369,7 +321,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Villarreal",
    "confidence": 53,
-   "odds": 1.88,
+   "odds": 1.89,
    "score": null,
    "status": "pending"
   },
@@ -393,7 +345,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Atleti",
    "confidence": 68,
-   "odds": 1.47,
+   "odds": 1.46,
    "score": null,
    "status": "pending"
   },
@@ -749,6 +701,30 @@ window.PRONOSTICS_DATA = {
    "date": "2026-10-25",
    "league": "FL1",
    "leagueName": "Ligue 1",
+   "match": "Toulouse — Troyes",
+   "model": "poisson",
+   "tip": "Victoire Toulouse",
+   "confidence": 81,
+   "odds": 1.24,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-25",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Toulouse — Troyes",
+   "model": "elo",
+   "tip": "Victoire Toulouse",
+   "confidence": 59,
+   "odds": 1.69,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-10-25",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
    "match": "Auxerre — Le Mans",
    "model": "poisson",
    "tip": "Victoire Auxerre",
@@ -920,8 +896,8 @@ window.PRONOSTICS_DATA = {
    "match": "Athletic — Getafe",
    "model": "poisson",
    "tip": "Victoire Athletic",
-   "confidence": 50,
-   "odds": 2.01,
+   "confidence": 47,
+   "odds": 2.12,
    "score": null,
    "status": "pending"
   },
@@ -932,8 +908,8 @@ window.PRONOSTICS_DATA = {
    "match": "Athletic — Getafe",
    "model": "elo",
    "tip": "Victoire Athletic",
-   "confidence": 50,
-   "odds": 2.01,
+   "confidence": 47,
+   "odds": 2.14,
    "score": null,
    "status": "pending"
   },
@@ -944,8 +920,8 @@ window.PRONOSTICS_DATA = {
    "match": "Celta — Real Betis",
    "model": "poisson",
    "tip": "Victoire Celta",
-   "confidence": 47,
-   "odds": 2.11,
+   "confidence": 48,
+   "odds": 2.1,
    "score": null,
    "status": "pending"
   },
@@ -968,8 +944,8 @@ window.PRONOSTICS_DATA = {
    "match": "Real Sociedad — Levante",
    "model": "poisson",
    "tip": "Victoire Real Sociedad",
-   "confidence": 61,
-   "odds": 1.63,
+   "confidence": 55,
+   "odds": 1.8,
    "score": null,
    "status": "pending"
   },
@@ -980,8 +956,8 @@ window.PRONOSTICS_DATA = {
    "match": "Real Sociedad — Levante",
    "model": "elo",
    "tip": "Victoire Real Sociedad",
-   "confidence": 53,
-   "odds": 1.88,
+   "confidence": 50,
+   "odds": 1.99,
    "score": null,
    "status": "pending"
   },
@@ -1185,7 +1161,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Sevilla FC",
    "confidence": 63,
-   "odds": 1.59,
+   "odds": 1.58,
    "score": null,
    "status": "pending"
   },
@@ -1497,7 +1473,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Villarreal",
    "confidence": 46,
-   "odds": 2.18,
+   "odds": 2.16,
    "score": null,
    "status": "pending"
   },
@@ -1832,8 +1808,8 @@ window.PRONOSTICS_DATA = {
    "match": "Levante — Atleti",
    "model": "poisson",
    "tip": "Victoire Atleti",
-   "confidence": 69,
-   "odds": 1.44,
+   "confidence": 64,
+   "odds": 1.56,
    "score": null,
    "status": "pending"
   },
@@ -1844,8 +1820,8 @@ window.PRONOSTICS_DATA = {
    "match": "Levante — Atleti",
    "model": "elo",
    "tip": "Victoire Atleti",
-   "confidence": 47,
-   "odds": 2.15,
+   "confidence": 43,
+   "odds": 2.3,
    "score": null,
    "status": "pending"
   },
@@ -1856,8 +1832,8 @@ window.PRONOSTICS_DATA = {
    "match": "Rayo Vallecano — Celta",
    "model": "poisson",
    "tip": "Victoire Celta",
-   "confidence": 49,
-   "odds": 2.06,
+   "confidence": 48,
+   "odds": 2.07,
    "score": null,
    "status": "pending"
   },
@@ -1881,7 +1857,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Real Betis",
    "confidence": 80,
-   "odds": 1.25,
+   "odds": 1.24,
    "score": null,
    "status": "pending"
   },
@@ -2241,7 +2217,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Sevilla FC",
    "confidence": 44,
-   "odds": 2.27,
+   "odds": 2.29,
    "score": null,
    "status": "pending"
   },
@@ -2288,7 +2264,7 @@ window.PRONOSTICS_DATA = {
    "match": "Elche — Valencia",
    "model": "poisson",
    "tip": "Victoire Elche",
-   "confidence": 55,
+   "confidence": 56,
    "odds": 1.8,
    "score": null,
    "status": "pending"
@@ -2312,8 +2288,8 @@ window.PRONOSTICS_DATA = {
    "match": "Athletic — Real Sociedad",
    "model": "poisson",
    "tip": "Victoire Athletic",
-   "confidence": 47,
-   "odds": 2.12,
+   "confidence": 41,
+   "odds": 2.45,
    "score": null,
    "status": "pending"
   },
@@ -2324,8 +2300,8 @@ window.PRONOSTICS_DATA = {
    "match": "Athletic — Real Sociedad",
    "model": "elo",
    "tip": "Victoire Athletic",
-   "confidence": 40,
-   "odds": 2.5,
+   "confidence": 37,
+   "odds": 2.72,
    "score": null,
    "status": "pending"
   },
@@ -2528,8 +2504,8 @@ window.PRONOSTICS_DATA = {
    "match": "Deportivo — Osasuna",
    "model": "poisson",
    "tip": "Victoire Deportivo",
-   "confidence": 66,
-   "odds": 1.51,
+   "confidence": 67,
+   "odds": 1.5,
    "score": null,
    "status": "pending"
   },
@@ -4872,6 +4848,30 @@ window.PRONOSTICS_DATA = {
    "odds": 2.54,
    "score": "0–3",
    "status": "loss"
+  },
+  {
+   "date": "2026-10-21",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Levante — Athletic",
+   "model": "poisson",
+   "tip": "Victoire Athletic",
+   "confidence": 41,
+   "odds": 2.47,
+   "score": "3–1",
+   "status": "loss"
+  },
+  {
+   "date": "2026-10-21",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Levante — Athletic",
+   "model": "elo",
+   "tip": "Victoire Levante",
+   "confidence": 38,
+   "odds": 2.61,
+   "score": "3–1",
+   "status": "win"
   }
  ]
 };
