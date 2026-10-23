@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-10-22 10:53 UTC",
+ "generatedAt": "2026-10-23 10:44 UTC",
  "demo": false,
  "leagues": [
   {
@@ -2566,6 +2566,126 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Atalanta",
    "confidence": 53,
    "odds": 1.9,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-06",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Toulouse — Strasbourg",
+   "model": "poisson",
+   "tip": "Victoire Toulouse",
+   "confidence": 58,
+   "odds": 1.72,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-06",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Toulouse — Strasbourg",
+   "model": "elo",
+   "tip": "Victoire Toulouse",
+   "confidence": 50,
+   "odds": 2.02,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-06",
+   "league": "PL",
+   "leagueName": "Premier League",
+   "match": "Everton — Coventry City",
+   "model": "poisson",
+   "tip": "Victoire Everton",
+   "confidence": 67,
+   "odds": 1.48,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-06",
+   "league": "PL",
+   "leagueName": "Premier League",
+   "match": "Everton — Coventry City",
+   "model": "elo",
+   "tip": "Victoire Everton",
+   "confidence": 53,
+   "odds": 1.9,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-06",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Sevilla FC — Alavés",
+   "model": "poisson",
+   "tip": "Victoire Alavés",
+   "confidence": 42,
+   "odds": 2.39,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-06",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Sevilla FC — Alavés",
+   "model": "elo",
+   "tip": "Victoire Sevilla FC",
+   "confidence": 48,
+   "odds": 2.08,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-06",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Venezia FC — Udinese",
+   "model": "poisson",
+   "tip": "Victoire Udinese",
+   "confidence": 49,
+   "odds": 2.04,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-06",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Venezia FC — Udinese",
+   "model": "elo",
+   "tip": "Victoire Venezia FC",
+   "confidence": 42,
+   "odds": 2.37,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-06",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "HSV — M'gladbach",
+   "model": "poisson",
+   "tip": "Victoire HSV",
+   "confidence": 57,
+   "odds": 1.76,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-06",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "HSV — M'gladbach",
+   "model": "elo",
+   "tip": "Victoire HSV",
+   "confidence": 58,
+   "odds": 1.74,
    "score": null,
    "status": "pending"
   },
