@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-10-29 11:59 UTC",
+ "generatedAt": "2026-10-30 11:53 UTC",
  "demo": false,
  "leagues": [
   {
@@ -25,54 +25,6 @@ window.PRONOSTICS_DATA = {
   }
  ],
  "picks": [
-  {
-   "date": "2026-10-29",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Frosinone — Lecce",
-   "model": "poisson",
-   "tip": "Victoire Frosinone",
-   "confidence": 65,
-   "odds": 1.54,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-10-29",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Frosinone — Lecce",
-   "model": "elo",
-   "tip": "Victoire Frosinone",
-   "confidence": 55,
-   "odds": 1.8,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-10-29",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Fiorentina — Atalanta",
-   "model": "poisson",
-   "tip": "Victoire Atalanta",
-   "confidence": 65,
-   "odds": 1.54,
-   "score": null,
-   "status": "pending"
-  },
-  {
-   "date": "2026-10-29",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Fiorentina — Atalanta",
-   "model": "elo",
-   "tip": "Victoire Atalanta",
-   "confidence": 35,
-   "odds": 2.88,
-   "score": null,
-   "status": "pending"
-  },
   {
    "date": "2026-10-30",
    "league": "FL1",
@@ -512,8 +464,8 @@ window.PRONOSTICS_DATA = {
    "match": "Bologna — Monza",
    "model": "poisson",
    "tip": "Victoire Bologna",
-   "confidence": 51,
-   "odds": 1.94,
+   "confidence": 52,
+   "odds": 1.91,
    "score": null,
    "status": "pending"
   },
@@ -536,8 +488,8 @@ window.PRONOSTICS_DATA = {
    "match": "Udinese — Roma",
    "model": "poisson",
    "tip": "Victoire Roma",
-   "confidence": 88,
-   "odds": 1.14,
+   "confidence": 87,
+   "odds": 1.15,
    "score": null,
    "status": "pending"
   },
@@ -560,8 +512,8 @@ window.PRONOSTICS_DATA = {
    "match": "Milan — Inter",
    "model": "poisson",
    "tip": "Victoire Inter",
-   "confidence": 54,
-   "odds": 1.85,
+   "confidence": 53,
+   "odds": 1.89,
    "score": null,
    "status": "pending"
   },
@@ -968,8 +920,8 @@ window.PRONOSTICS_DATA = {
    "match": "Frosinone — Torino",
    "model": "poisson",
    "tip": "Victoire Frosinone",
-   "confidence": 50,
-   "odds": 2.0,
+   "confidence": 59,
+   "odds": 1.71,
    "score": null,
    "status": "pending"
   },
@@ -980,8 +932,8 @@ window.PRONOSTICS_DATA = {
    "match": "Frosinone — Torino",
    "model": "elo",
    "tip": "Victoire Frosinone",
-   "confidence": 50,
-   "odds": 2.01,
+   "confidence": 52,
+   "odds": 1.91,
    "score": null,
    "status": "pending"
   },
@@ -992,7 +944,7 @@ window.PRONOSTICS_DATA = {
    "match": "Lazio — Cagliari",
    "model": "poisson",
    "tip": "Victoire Lazio",
-   "confidence": 79,
+   "confidence": 80,
    "odds": 1.26,
    "score": null,
    "status": "pending"
@@ -1015,9 +967,9 @@ window.PRONOSTICS_DATA = {
    "leagueName": "Serie A",
    "match": "Lecce — Genoa",
    "model": "poisson",
-   "tip": "Victoire Lecce",
-   "confidence": 36,
-   "odds": 2.75,
+   "tip": "Victoire Genoa",
+   "confidence": 39,
+   "odds": 2.59,
    "score": null,
    "status": "pending"
   },
@@ -1028,8 +980,8 @@ window.PRONOSTICS_DATA = {
    "match": "Lecce — Genoa",
    "model": "elo",
    "tip": "Victoire Lecce",
-   "confidence": 43,
-   "odds": 2.34,
+   "confidence": 40,
+   "odds": 2.5,
    "score": null,
    "status": "pending"
   },
@@ -1040,8 +992,8 @@ window.PRONOSTICS_DATA = {
    "match": "Juventus — Napoli",
    "model": "poisson",
    "tip": "Victoire Napoli",
-   "confidence": 45,
-   "odds": 2.21,
+   "confidence": 44,
+   "odds": 2.26,
    "score": null,
    "status": "pending"
   },
@@ -1184,8 +1136,8 @@ window.PRONOSTICS_DATA = {
    "match": "Sassuolo — Fiorentina",
    "model": "poisson",
    "tip": "Victoire Sassuolo",
-   "confidence": 52,
-   "odds": 1.92,
+   "confidence": 49,
+   "odds": 2.02,
    "score": null,
    "status": "pending"
   },
@@ -1208,8 +1160,8 @@ window.PRONOSTICS_DATA = {
    "match": "Atalanta — Parma",
    "model": "poisson",
    "tip": "Victoire Atalanta",
-   "confidence": 67,
-   "odds": 1.5,
+   "confidence": 68,
+   "odds": 1.48,
    "score": null,
    "status": "pending"
   },
@@ -1304,8 +1256,8 @@ window.PRONOSTICS_DATA = {
    "match": "Venezia FC — Udinese",
    "model": "poisson",
    "tip": "Victoire Udinese",
-   "confidence": 48,
-   "odds": 2.08,
+   "confidence": 47,
+   "odds": 2.13,
    "score": null,
    "status": "pending"
   },
@@ -1592,8 +1544,8 @@ window.PRONOSTICS_DATA = {
    "match": "Torino — Lecce",
    "model": "poisson",
    "tip": "Victoire Torino",
-   "confidence": 52,
-   "odds": 1.91,
+   "confidence": 61,
+   "odds": 1.63,
    "score": null,
    "status": "pending"
   },
@@ -1604,8 +1556,8 @@ window.PRONOSTICS_DATA = {
    "match": "Torino — Lecce",
    "model": "elo",
    "tip": "Victoire Torino",
-   "confidence": 50,
-   "odds": 1.99,
+   "confidence": 53,
+   "odds": 1.9,
    "score": null,
    "status": "pending"
   },
@@ -1616,8 +1568,8 @@ window.PRONOSTICS_DATA = {
    "match": "Cagliari — Frosinone",
    "model": "poisson",
    "tip": "Victoire Frosinone",
-   "confidence": 61,
-   "odds": 1.63,
+   "confidence": 67,
+   "odds": 1.5,
    "score": null,
    "status": "pending"
   },
@@ -1627,9 +1579,9 @@ window.PRONOSTICS_DATA = {
    "leagueName": "Serie A",
    "match": "Cagliari — Frosinone",
    "model": "elo",
-   "tip": "Victoire Cagliari",
-   "confidence": 35,
-   "odds": 2.85,
+   "tip": "Victoire Frosinone",
+   "confidence": 36,
+   "odds": 2.8,
    "score": null,
    "status": "pending"
   },
@@ -1640,8 +1592,8 @@ window.PRONOSTICS_DATA = {
    "match": "Parma — Bologna",
    "model": "poisson",
    "tip": "Victoire Bologna",
-   "confidence": 60,
-   "odds": 1.65,
+   "confidence": 59,
+   "odds": 1.68,
    "score": null,
    "status": "pending"
   },
@@ -1664,7 +1616,7 @@ window.PRONOSTICS_DATA = {
    "match": "Roma — Sassuolo",
    "model": "poisson",
    "tip": "Victoire Roma",
-   "confidence": 89,
+   "confidence": 90,
    "odds": 1.12,
    "score": null,
    "status": "pending"
@@ -2192,8 +2144,8 @@ window.PRONOSTICS_DATA = {
    "match": "Napoli — Lazio",
    "model": "poisson",
    "tip": "Victoire Lazio",
-   "confidence": 60,
-   "odds": 1.67,
+   "confidence": 59,
+   "odds": 1.71,
    "score": null,
    "status": "pending"
   },
@@ -2216,8 +2168,8 @@ window.PRONOSTICS_DATA = {
    "match": "Genoa — Milan",
    "model": "poisson",
    "tip": "Victoire Milan",
-   "confidence": 65,
-   "odds": 1.55,
+   "confidence": 63,
+   "odds": 1.58,
    "score": null,
    "status": "pending"
   },
@@ -2240,8 +2192,8 @@ window.PRONOSTICS_DATA = {
    "match": "Monza — Atalanta",
    "model": "poisson",
    "tip": "Victoire Atalanta",
-   "confidence": 51,
-   "odds": 1.97,
+   "confidence": 50,
+   "odds": 2.0,
    "score": null,
    "status": "pending"
   },
@@ -2265,7 +2217,7 @@ window.PRONOSTICS_DATA = {
    "model": "poisson",
    "tip": "Victoire Inter",
    "confidence": 44,
-   "odds": 2.3,
+   "odds": 2.26,
    "score": null,
    "status": "pending"
   },
@@ -2288,8 +2240,8 @@ window.PRONOSTICS_DATA = {
    "match": "Fiorentina — Juventus",
    "model": "poisson",
    "tip": "Victoire Juventus",
-   "confidence": 62,
-   "odds": 1.61,
+   "confidence": 58,
+   "odds": 1.71,
    "score": null,
    "status": "pending"
   },
@@ -6023,6 +5975,54 @@ window.PRONOSTICS_DATA = {
    "confidence": 38,
    "odds": 2.63,
    "score": "1–4",
+   "status": "loss"
+  },
+  {
+   "date": "2026-10-29",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Frosinone — Lecce",
+   "model": "poisson",
+   "tip": "Victoire Frosinone",
+   "confidence": 65,
+   "odds": 1.54,
+   "score": "5–1",
+   "status": "win"
+  },
+  {
+   "date": "2026-10-29",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Frosinone — Lecce",
+   "model": "elo",
+   "tip": "Victoire Frosinone",
+   "confidence": 55,
+   "odds": 1.8,
+   "score": "5–1",
+   "status": "win"
+  },
+  {
+   "date": "2026-10-29",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Fiorentina — Atalanta",
+   "model": "poisson",
+   "tip": "Victoire Atalanta",
+   "confidence": 64,
+   "odds": 1.57,
+   "score": "2–2",
+   "status": "loss"
+  },
+  {
+   "date": "2026-10-29",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Fiorentina — Atalanta",
+   "model": "elo",
+   "tip": "Victoire Atalanta",
+   "confidence": 35,
+   "odds": 2.88,
+   "score": "2–2",
    "status": "loss"
   }
  ]
