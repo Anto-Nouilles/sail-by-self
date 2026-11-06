@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-11-05 13:44 UTC",
+ "generatedAt": "2026-11-06 13:28 UTC",
  "demo": false,
  "leagues": [
   {
@@ -1174,6 +1174,78 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Hoffenheim",
    "confidence": 48,
    "odds": 2.09,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-20",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Troyes — Le Havre",
+   "model": "poisson",
+   "tip": "Victoire Troyes",
+   "confidence": 42,
+   "odds": 2.38,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-20",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Troyes — Le Havre",
+   "model": "elo",
+   "tip": "Victoire Troyes",
+   "confidence": 51,
+   "odds": 1.94,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-20",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Athletic — Espanyol",
+   "model": "poisson",
+   "tip": "Victoire Athletic",
+   "confidence": 53,
+   "odds": 1.9,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-20",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Athletic — Espanyol",
+   "model": "elo",
+   "tip": "Victoire Athletic",
+   "confidence": 54,
+   "odds": 1.85,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-20",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Bayern — 1. FC Köln",
+   "model": "poisson",
+   "tip": "Victoire Bayern",
+   "confidence": 91,
+   "odds": 1.1,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-20",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Bayern — 1. FC Köln",
+   "model": "elo",
+   "tip": "Victoire Bayern",
+   "confidence": 63,
+   "odds": 1.58,
    "score": null,
    "status": "pending"
   },
