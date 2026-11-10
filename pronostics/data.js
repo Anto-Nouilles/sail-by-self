@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-11-09 14:45 UTC",
+ "generatedAt": "2026-11-10 13:59 UTC",
  "demo": false,
  "leagues": [
   {
@@ -1176,102 +1176,6 @@ window.PRONOSTICS_DATA = {
    "odds": 2.54,
    "score": null,
    "status": "pending"
-  },
-  {
-   "date": "2026-10-19",
-   "league": "PL",
-   "leagueName": "Premier League",
-   "match": "Tottenham — Coventry City",
-   "model": "poisson",
-   "tip": "Match nul",
-   "confidence": 37,
-   "odds": 2.7,
-   "score": "3–1",
-   "status": "loss"
-  },
-  {
-   "date": "2026-10-19",
-   "league": "PL",
-   "leagueName": "Premier League",
-   "match": "Tottenham — Coventry City",
-   "model": "elo",
-   "tip": "Victoire Tottenham",
-   "confidence": 39,
-   "odds": 2.55,
-   "score": "3–1",
-   "status": "win"
-  },
-  {
-   "date": "2026-10-19",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Getafe — Rayo Vallecano",
-   "model": "poisson",
-   "tip": "Victoire Rayo Vallecano",
-   "confidence": 42,
-   "odds": 2.36,
-   "score": "1–1",
-   "status": "loss"
-  },
-  {
-   "date": "2026-10-19",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Getafe — Rayo Vallecano",
-   "model": "elo",
-   "tip": "Victoire Getafe",
-   "confidence": 42,
-   "odds": 2.41,
-   "score": "1–1",
-   "status": "loss"
-  },
-  {
-   "date": "2026-10-19",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Monza — Cagliari",
-   "model": "poisson",
-   "tip": "Victoire Cagliari",
-   "confidence": 64,
-   "odds": 1.56,
-   "score": "4–0",
-   "status": "loss"
-  },
-  {
-   "date": "2026-10-19",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Monza — Cagliari",
-   "model": "elo",
-   "tip": "Victoire Cagliari",
-   "confidence": 40,
-   "odds": 2.52,
-   "score": "4–0",
-   "status": "loss"
-  },
-  {
-   "date": "2026-10-19",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Parma — Torino",
-   "model": "poisson",
-   "tip": "Victoire Torino",
-   "confidence": 48,
-   "odds": 2.08,
-   "score": "0–3",
-   "status": "win"
-  },
-  {
-   "date": "2026-10-19",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Parma — Torino",
-   "model": "elo",
-   "tip": "Victoire Parma",
-   "confidence": 39,
-   "odds": 2.54,
-   "score": "0–3",
-   "status": "loss"
   },
   {
    "date": "2026-10-21",
