@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-11-11 13:15 UTC",
+ "generatedAt": "2026-11-12 14:18 UTC",
  "demo": false,
  "leagues": [
   {
@@ -1176,30 +1176,6 @@ window.PRONOSTICS_DATA = {
    "odds": 2.54,
    "score": null,
    "status": "pending"
-  },
-  {
-   "date": "2026-10-21",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Levante — Athletic",
-   "model": "poisson",
-   "tip": "Victoire Athletic",
-   "confidence": 41,
-   "odds": 2.47,
-   "score": "3–1",
-   "status": "loss"
-  },
-  {
-   "date": "2026-10-21",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Levante — Athletic",
-   "model": "elo",
-   "tip": "Victoire Levante",
-   "confidence": 38,
-   "odds": 2.61,
-   "score": "3–1",
-   "status": "win"
   },
   {
    "date": "2026-10-23",
