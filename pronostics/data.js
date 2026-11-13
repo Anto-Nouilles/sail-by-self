@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-11-12 14:18 UTC",
+ "generatedAt": "2026-11-13 13:40 UTC",
  "demo": false,
  "leagues": [
   {
@@ -1174,6 +1174,126 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Monza",
    "confidence": 39,
    "odds": 2.54,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-27",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Brest — Paris FC",
+   "model": "poisson",
+   "tip": "Victoire Brest",
+   "confidence": 39,
+   "odds": 2.54,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-27",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Brest — Paris FC",
+   "model": "elo",
+   "tip": "Victoire Brest",
+   "confidence": 38,
+   "odds": 2.61,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-27",
+   "league": "PL",
+   "leagueName": "Premier League",
+   "match": "Nottingham — Chelsea",
+   "model": "poisson",
+   "tip": "Victoire Chelsea",
+   "confidence": 47,
+   "odds": 2.14,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-27",
+   "league": "PL",
+   "leagueName": "Premier League",
+   "match": "Nottingham — Chelsea",
+   "model": "elo",
+   "tip": "Victoire Nottingham",
+   "confidence": 35,
+   "odds": 2.82,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-27",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Levante — Santander",
+   "model": "poisson",
+   "tip": "Victoire Levante",
+   "confidence": 60,
+   "odds": 1.66,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-27",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Levante — Santander",
+   "model": "elo",
+   "tip": "Victoire Levante",
+   "confidence": 46,
+   "odds": 2.19,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-27",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Venezia FC — Bologna",
+   "model": "poisson",
+   "tip": "Victoire Bologna",
+   "confidence": 65,
+   "odds": 1.55,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-27",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Venezia FC — Bologna",
+   "model": "elo",
+   "tip": "Victoire Bologna",
+   "confidence": 48,
+   "odds": 2.08,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-27",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Bremen — M'gladbach",
+   "model": "poisson",
+   "tip": "Victoire Bremen",
+   "confidence": 85,
+   "odds": 1.18,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-11-27",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Bremen — M'gladbach",
+   "model": "elo",
+   "tip": "Victoire Bremen",
+   "confidence": 63,
+   "odds": 1.58,
    "score": null,
    "status": "pending"
   },
