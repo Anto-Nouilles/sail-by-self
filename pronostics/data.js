@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-11-16 14:21 UTC",
+ "generatedAt": "2026-11-17 15:13 UTC",
  "demo": false,
  "leagues": [
   {
@@ -2330,52 +2330,28 @@ window.PRONOSTICS_DATA = {
    "status": "pending"
   },
   {
-   "date": "2026-10-26",
-   "league": "FL1",
-   "leagueName": "Ligue 1",
-   "match": "PSG — Olympique Lyon",
+   "date": "2026-12-01",
+   "league": "PL",
+   "leagueName": "Premier League",
+   "match": "Coventry City — Ipswich Town",
    "model": "poisson",
-   "tip": "Victoire Olympique Lyon",
-   "confidence": 47,
-   "odds": 2.13,
-   "score": "2–0",
-   "status": "loss"
+   "tip": "Victoire Ipswich Town",
+   "confidence": 43,
+   "odds": 2.33,
+   "score": null,
+   "status": "pending"
   },
   {
-   "date": "2026-10-26",
-   "league": "FL1",
-   "leagueName": "Ligue 1",
-   "match": "PSG — Olympique Lyon",
+   "date": "2026-12-01",
+   "league": "PL",
+   "leagueName": "Premier League",
+   "match": "Coventry City — Ipswich Town",
    "model": "elo",
-   "tip": "Victoire PSG",
-   "confidence": 46,
-   "odds": 2.19,
-   "score": "2–0",
-   "status": "win"
-  },
-  {
-   "date": "2026-10-26",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Sevilla FC — Osasuna",
-   "model": "poisson",
-   "tip": "Victoire Sevilla FC",
-   "confidence": 63,
-   "odds": 1.58,
-   "score": "2–0",
-   "status": "win"
-  },
-  {
-   "date": "2026-10-26",
-   "league": "PD",
-   "leagueName": "Liga",
-   "match": "Sevilla FC — Osasuna",
-   "model": "elo",
-   "tip": "Victoire Sevilla FC",
-   "confidence": 50,
-   "odds": 2.0,
-   "score": "2–0",
-   "status": "win"
+   "tip": "Victoire Coventry City",
+   "confidence": 40,
+   "odds": 2.51,
+   "score": null,
+   "status": "pending"
   },
   {
    "date": "2026-10-27",
