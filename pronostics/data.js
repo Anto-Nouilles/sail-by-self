@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-11-18 14:50 UTC",
+ "generatedAt": "2026-11-19 14:56 UTC",
  "demo": false,
  "leagues": [
   {
@@ -2594,124 +2594,28 @@ window.PRONOSTICS_DATA = {
    "status": "pending"
   },
   {
-   "date": "2026-10-28",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Milan — Bologna",
+   "date": "2026-12-03",
+   "league": "PL",
+   "leagueName": "Premier League",
+   "match": "Tottenham — Fulham",
    "model": "poisson",
-   "tip": "Victoire Milan",
-   "confidence": 64,
-   "odds": 1.55,
-   "score": "2–4",
-   "status": "loss"
+   "tip": "Victoire Tottenham",
+   "confidence": 41,
+   "odds": 2.44,
+   "score": null,
+   "status": "pending"
   },
   {
-   "date": "2026-10-28",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Milan — Bologna",
+   "date": "2026-12-03",
+   "league": "PL",
+   "leagueName": "Premier League",
+   "match": "Tottenham — Fulham",
    "model": "elo",
-   "tip": "Victoire Milan",
-   "confidence": 59,
-   "odds": 1.69,
-   "score": "2–4",
-   "status": "loss"
-  },
-  {
-   "date": "2026-10-28",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Venezia FC — Inter",
-   "model": "poisson",
-   "tip": "Victoire Inter",
-   "confidence": 91,
-   "odds": 1.1,
-   "score": "0–2",
-   "status": "win"
-  },
-  {
-   "date": "2026-10-28",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Venezia FC — Inter",
-   "model": "elo",
-   "tip": "Victoire Inter",
-   "confidence": 57,
-   "odds": 1.74,
-   "score": "0–2",
-   "status": "win"
-  },
-  {
-   "date": "2026-10-28",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Parma — Udinese",
-   "model": "poisson",
-   "tip": "Victoire Udinese",
-   "confidence": 46,
+   "tip": "Victoire Tottenham",
+   "confidence": 47,
    "odds": 2.15,
-   "score": "0–0",
-   "status": "loss"
-  },
-  {
-   "date": "2026-10-28",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Parma — Udinese",
-   "model": "elo",
-   "tip": "Victoire Parma",
-   "confidence": 46,
-   "odds": 2.18,
-   "score": "0–0",
-   "status": "loss"
-  },
-  {
-   "date": "2026-10-28",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Genoa — Juventus",
-   "model": "poisson",
-   "tip": "Victoire Juventus",
-   "confidence": 60,
-   "odds": 1.66,
-   "score": "2–0",
-   "status": "loss"
-  },
-  {
-   "date": "2026-10-28",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Genoa — Juventus",
-   "model": "elo",
-   "tip": "Victoire Juventus",
-   "confidence": 39,
-   "odds": 2.58,
-   "score": "2–0",
-   "status": "loss"
-  },
-  {
-   "date": "2026-10-28",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Monza — Napoli",
-   "model": "poisson",
-   "tip": "Victoire Napoli",
-   "confidence": 55,
-   "odds": 1.82,
-   "score": "1–4",
-   "status": "win"
-  },
-  {
-   "date": "2026-10-28",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Monza — Napoli",
-   "model": "elo",
-   "tip": "Victoire Monza",
-   "confidence": 38,
-   "odds": 2.63,
-   "score": "1–4",
-   "status": "loss"
+   "score": null,
+   "status": "pending"
   },
   {
    "date": "2026-10-29",
