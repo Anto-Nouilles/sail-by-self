@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-11-19 14:56 UTC",
+ "generatedAt": "2026-11-20 14:38 UTC",
  "demo": false,
  "leagues": [
   {
@@ -2618,52 +2618,100 @@ window.PRONOSTICS_DATA = {
    "status": "pending"
   },
   {
-   "date": "2026-10-29",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Frosinone — Lecce",
+   "date": "2026-12-04",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Toulouse — PSG",
    "model": "poisson",
-   "tip": "Victoire Frosinone",
-   "confidence": 65,
-   "odds": 1.54,
-   "score": "5–1",
-   "status": "win"
-  },
-  {
-   "date": "2026-10-29",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Frosinone — Lecce",
-   "model": "elo",
-   "tip": "Victoire Frosinone",
+   "tip": "Victoire PSG",
    "confidence": 55,
-   "odds": 1.8,
-   "score": "5–1",
-   "status": "win"
+   "odds": 1.83,
+   "score": null,
+   "status": "pending"
   },
   {
-   "date": "2026-10-29",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Fiorentina — Atalanta",
-   "model": "poisson",
-   "tip": "Victoire Atalanta",
-   "confidence": 64,
-   "odds": 1.57,
-   "score": "2–2",
-   "status": "loss"
-  },
-  {
-   "date": "2026-10-29",
-   "league": "SA",
-   "leagueName": "Serie A",
-   "match": "Fiorentina — Atalanta",
+   "date": "2026-12-04",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Toulouse — PSG",
    "model": "elo",
-   "tip": "Victoire Atalanta",
-   "confidence": 35,
-   "odds": 2.88,
-   "score": "2–2",
-   "status": "loss"
+   "tip": "Victoire PSG",
+   "confidence": 41,
+   "odds": 2.46,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-12-04",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Alavés — Espanyol",
+   "model": "poisson",
+   "tip": "Victoire Alavés",
+   "confidence": 40,
+   "odds": 2.51,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-12-04",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Alavés — Espanyol",
+   "model": "elo",
+   "tip": "Victoire Alavés",
+   "confidence": 46,
+   "odds": 2.19,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-12-04",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Bologna — Roma",
+   "model": "poisson",
+   "tip": "Victoire Roma",
+   "confidence": 68,
+   "odds": 1.46,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-12-04",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Bologna — Roma",
+   "model": "elo",
+   "tip": "Victoire Roma",
+   "confidence": 39,
+   "odds": 2.59,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-12-04",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Bayern — SC Paderborn",
+   "model": "poisson",
+   "tip": "Victoire Bayern",
+   "confidence": 86,
+   "odds": 1.16,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-12-04",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "Bayern — SC Paderborn",
+   "model": "elo",
+   "tip": "Victoire Bayern",
+   "confidence": 64,
+   "odds": 1.55,
+   "score": null,
+   "status": "pending"
   },
   {
    "date": "2026-10-30",
