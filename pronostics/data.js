@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-11-25 16:30 UTC",
+ "generatedAt": "2026-11-26 16:03 UTC",
  "demo": false,
  "leagues": [
   {
@@ -2614,6 +2614,30 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Fiorentina",
    "confidence": 35,
    "odds": 2.9,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-12-09",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Rayo Vallecano — Athletic",
+   "model": "poisson",
+   "tip": "Victoire Athletic",
+   "confidence": 47,
+   "odds": 2.11,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-12-09",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Rayo Vallecano — Athletic",
+   "model": "elo",
+   "tip": "Victoire Rayo Vallecano",
+   "confidence": 35,
+   "odds": 2.84,
    "score": null,
    "status": "pending"
   },
