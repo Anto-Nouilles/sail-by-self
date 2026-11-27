@@ -1,6 +1,6 @@
 // Fichier généré par generator/predict.py — ne pas éditer à la main.
 window.PRONOSTICS_DATA = {
- "generatedAt": "2026-11-26 16:03 UTC",
+ "generatedAt": "2026-11-27 15:52 UTC",
  "demo": false,
  "leagues": [
   {
@@ -2638,6 +2638,102 @@ window.PRONOSTICS_DATA = {
    "tip": "Victoire Rayo Vallecano",
    "confidence": 35,
    "odds": 2.84,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-12-11",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Auxerre — Toulouse",
+   "model": "poisson",
+   "tip": "Victoire Toulouse",
+   "confidence": 54,
+   "odds": 1.85,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-12-11",
+   "league": "FL1",
+   "leagueName": "Ligue 1",
+   "match": "Auxerre — Toulouse",
+   "model": "elo",
+   "tip": "Victoire Toulouse",
+   "confidence": 35,
+   "odds": 2.9,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-12-11",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Elche — Sevilla FC",
+   "model": "poisson",
+   "tip": "Victoire Sevilla FC",
+   "confidence": 38,
+   "odds": 2.66,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-12-11",
+   "league": "PD",
+   "leagueName": "Liga",
+   "match": "Elche — Sevilla FC",
+   "model": "elo",
+   "tip": "Victoire Elche",
+   "confidence": 35,
+   "odds": 2.83,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-12-11",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Udinese — Frosinone",
+   "model": "poisson",
+   "tip": "Victoire Frosinone",
+   "confidence": 69,
+   "odds": 1.45,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-12-11",
+   "league": "SA",
+   "leagueName": "Serie A",
+   "match": "Udinese — Frosinone",
+   "model": "elo",
+   "tip": "Victoire Frosinone",
+   "confidence": 47,
+   "odds": 2.11,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-12-11",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "HSV — Schalke",
+   "model": "poisson",
+   "tip": "Match nul",
+   "confidence": 39,
+   "odds": 2.58,
+   "score": null,
+   "status": "pending"
+  },
+  {
+   "date": "2026-12-11",
+   "league": "BL1",
+   "leagueName": "Bundesliga",
+   "match": "HSV — Schalke",
+   "model": "elo",
+   "tip": "Victoire HSV",
+   "confidence": 46,
+   "odds": 2.17,
    "score": null,
    "status": "pending"
   },
